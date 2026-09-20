@@ -24,9 +24,9 @@ export const Route = createFileRoute("/mountain-view-homestay-theog")({
           "Peaceful homestay with mountain views. Private balconies, home-cooked food, sunrise over the Himalayas.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://alpinecresthomestay.com/mountain-view-homestay-theog" },
+      { property: "og:url", content: "https://www.alpinecresthomestay.com/mountain-view-homestay-theog/" },
     ],
-    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/mountain-view-homestay-theog" }],
+    links: [{ rel: "canonical", href: "https://www.alpinecresthomestay.com/mountain-view-homestay-theog/" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },

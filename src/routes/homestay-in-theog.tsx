@@ -25,9 +25,9 @@ export const Route = createFileRoute("/homestay-in-theog")({
           "Searching for a peaceful homestay in Theog? Alpine Crest Homestay is located in Kathot near Theog and offers a comfortable mountain stay with beautiful surroundings, local hospitality and convenient access to Kufri and Shimla.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://alpinecresthomestay.com/homestay-in-theog" },
+      { property: "og:url", content: "https://www.alpinecresthomestay.com/homestay-in-theog/" },
     ],
-    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/homestay-in-theog" }],
+    links: [{ rel: "canonical", href: "https://www.alpinecresthomestay.com/homestay-in-theog/" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },

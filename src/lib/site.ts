@@ -43,7 +43,8 @@ export function pageMeta(opts: {
   type?: string;
 }) {
   const { title, description, path, type = "website" } = opts;
-  const canonicalUrl = path.startsWith("http") ? path : `https://alpinecresthomestay.com${path === "/" ? "" : path}`;
+  // Ensure canonical URL has www. and trailing slash
+  const canonicalUrl = path.startsWith("http") ? path : `https://www.alpinecresthomestay.com${path === "/" ? "/" : path + "/"}`;
   return {
     meta: [
       { title },
@@ -97,8 +98,8 @@ export const lodgingSchema = {
     latitude: SITE.latitude,
     longitude: SITE.longitude,
   },
-  url: "https://alpinecresthomestay.com",
-  image: "https://alpinecresthomestay.com/images/exterior.webp",
+  url: "https://www.alpinecresthomestay.com/",
+  image: "https://www.alpinecresthomestay.com/images/exterior.webp",
   sameAs: [
     "https://maps.app.goo.gl/BmvDx9UcSdu7zsML8"
   ],

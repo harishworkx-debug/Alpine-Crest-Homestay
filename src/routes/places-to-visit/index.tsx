@@ -20,9 +20,9 @@ export const Route = createFileRoute("/places-to-visit/")({
           "Guides to Theog, Kufri, Shimla, Fagu, Narkanda, Chail and the upper Shimla hills.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://alpinecresthomestay.com/places-to-visit" },
+      { property: "og:url", content: "https://www.alpinecresthomestay.com/places-to-visit/" },
     ],
-    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/places-to-visit" }],
+    links: [{ rel: "canonical", href: "https://www.alpinecresthomestay.com/places-to-visit/" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },

@@ -24,9 +24,9 @@ export const Route = createFileRoute("/homestay-near-kufri")({
           "Peaceful homestay a short drive from Kufri. Mountain views, private balconies, home-cooked food.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://alpinecresthomestay.com/homestay-near-kufri" },
+      { property: "og:url", content: "https://www.alpinecresthomestay.com/homestay-near-kufri/" },
     ],
-    links: [{ rel: "canonical", href: "https://alpinecresthomestay.com/homestay-near-kufri" }],
+    links: [{ rel: "canonical", href: "https://www.alpinecresthomestay.com/homestay-near-kufri/" }],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },
