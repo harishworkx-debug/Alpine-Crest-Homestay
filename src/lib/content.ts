@@ -23,7 +23,7 @@ export const rooms: RoomInfo[] = [
     image: standardRoom,
     guests: "2 guests",
     copy: "One of our 3 double rooms without a balcony. A calm, wood-warmed room with a comfortable double bed, soft lighting and a private attached bathroom. Includes breakfast and dinner.",
-    features: ["₹2,000 / night", "Breakfast & dinner included", "Attached bathroom"],
+    features: ["₹2,300 / night", "Breakfast & dinner included", "Attached bathroom"],
     messageKey: "standard",
   },
   {
@@ -31,7 +31,7 @@ export const rooms: RoomInfo[] = [
     image: deluxeRoom,
     guests: "2–3 guests",
     copy: "One of our 3 double rooms with a private balcony. Our largest room with full pine panelling, a sit-out by the window and a balcony that opens straight onto the deodar ridgeline. Includes breakfast and dinner.",
-    features: ["₹2,500 / night", "Breakfast & dinner included", "Private balcony", "Valley view"],
+    features: ["₹2,800 / night", "Breakfast & dinner included", "Private balcony", "Valley view"],
     messageKey: "deluxe",
   },
 ];
