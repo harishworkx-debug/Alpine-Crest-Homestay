@@ -27,9 +27,9 @@ function RoomsPage() {
           Mountain rooms with honest comfort
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Two room types, both kept clean and simple. Every room has an attached
-          bathroom, hot water and access to the shared lounge and terrace. Enquire
-          directly on WhatsApp for current availability and pricing.
+          We have 6 double rooms in total — 3 with a private balcony and 3 without. Every room has an attached
+          bathroom, hot water and access to the shared lounge and terrace. Both room prices include breakfast and dinner. Enquire
+          directly on WhatsApp for current availability.
         </p>
       </section>
 

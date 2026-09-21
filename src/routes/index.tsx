@@ -69,16 +69,16 @@ const rooms = [
     name: "Standard Room",
     image: standardRoom,
     guests: "2 guests",
-    copy: "A calm, wood-warmed room with a comfortable double bed, soft lighting and a private attached bathroom — ideal for couples and solo travellers.",
-    features: ["Double bed", "Attached bathroom", "Hot water", "Mountain air"],
+    copy: "One of our 3 double rooms without a balcony. A calm, wood-warmed room with a comfortable double bed, soft lighting and a private attached bathroom. Includes breakfast and dinner.",
+    features: ["₹2,000 / night", "Breakfast & dinner included", "Attached bathroom"],
     message: WA.standard,
   },
   {
-    name: "Deluxe Room",
+    name: "Deluxe Room (With Balcony)",
     image: deluxeRoom,
     guests: "2–3 guests",
-    copy: "Our largest room with full pine panelling, a sit-out by the window and a private balcony that opens straight onto the deodar ridgeline.",
-    features: ["Private balcony", "Seating area", "Smart TV", "Valley view"],
+    copy: "One of our 3 double rooms with a private balcony. Our largest room with full pine panelling, a sit-out by the window and a balcony that opens straight onto the deodar ridgeline. Includes breakfast and dinner.",
+    features: ["₹2,500 / night", "Breakfast & dinner included", "Private balcony", "Valley view"],
     message: WA.deluxe,
   },
 ];
@@ -334,7 +334,7 @@ function HomePage() {
             <SectionHeading
               eyebrow="Choose Your Stay"
               title="Find Your Perfect Stay in Theog"
-              intro="Two room types, both with mountain air and honest comfort"
+              intro="We offer 6 double rooms in total — 3 with a private balcony and 3 without, all including breakfast and dinner."
             />
           </Reveal>
           <StaggerGroup className="mt-10 grid gap-8 md:grid-cols-2" stagger={0.1}>
