@@ -70,7 +70,7 @@ const rooms = [
     image: standardRoom,
     guests: "2 guests",
     copy: "One of our 3 double rooms without a balcony. A calm, wood-warmed room with a comfortable double bed, soft lighting and a private attached bathroom. Includes breakfast and dinner.",
-    features: ["₹2,000 / night", "Breakfast & dinner included", "Attached bathroom"],
+    features: ["₹2,300 / night", "Breakfast & dinner included", "Attached bathroom"],
     message: WA.standard,
   },
   {
@@ -78,7 +78,7 @@ const rooms = [
     image: deluxeRoom,
     guests: "2–3 guests",
     copy: "One of our 3 double rooms with a private balcony. Our largest room with full pine panelling, a sit-out by the window and a balcony that opens straight onto the deodar ridgeline. Includes breakfast and dinner.",
-    features: ["₹2,500 / night", "Breakfast & dinner included", "Private balcony", "Valley view"],
+    features: ["₹2,800 / night", "Breakfast & dinner included", "Private balcony", "Valley view"],
     message: WA.deluxe,
   },
 ];
@@ -695,20 +695,20 @@ function HomePage() {
           <StaggerGroup className="mt-12 grid gap-6 md:grid-cols-3" stagger={0.1}>
             {/* Real Google reviews */}
             {[
-              { 
-                text: "Had a wonderful stay at Alpine Crest Homestay! The rooms were exceptionally clean, spacious, and beautifully designed with wooden interiors... The balcony offered breathtaking valley and sunset views.", 
-                author: "Sanjeev Mann", 
-                source: "Google" 
+              {
+                text: "Had a wonderful stay at Alpine Crest Homestay! The rooms were exceptionally clean, spacious, and beautifully designed with wooden interiors... The balcony offered breathtaking valley and sunset views.",
+                author: "Sanjeev Mann",
+                source: "Google"
               },
-              { 
-                text: "Had a great trip with friends all thanks to the sahil verma working there... one of the best views, food, rooms and services in the whole shimla.", 
-                author: "Shaurya Thakur", 
-                source: "Google" 
+              {
+                text: "Had a great trip with friends all thanks to the sahil verma working there... one of the best views, food, rooms and services in the whole shimla.",
+                author: "Shaurya Thakur",
+                source: "Google"
               },
-              { 
-                text: "Had a really pleasant stay at Alpine Crest Homestay. The room was clean and comfortable, and the mountain view from the property was beautiful. The location is peaceful and away from the usual crowd.", 
-                author: "Nancy Soni", 
-                source: "Google" 
+              {
+                text: "Had a really pleasant stay at Alpine Crest Homestay. The room was clean and comfortable, and the mountain view from the property was beautiful. The location is peaceful and away from the usual crowd.",
+                author: "Nancy Soni",
+                source: "Google"
               },
             ].map((review, i) => (
               <StaggerItem key={i}>
