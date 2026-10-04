@@ -1,4 +1,4 @@
-import { Phone, Home, MapPin } from "lucide-react";
+import { Phone, MapPin, CalendarCheck } from "lucide-react";
 import { SITE, WA, waLink } from "@/lib/site";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -10,56 +10,38 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 export function MobileCTA() {
-  const items = [
-    {
-      href: `tel:${SITE.phoneRaw}`,
-      label: "Call",
-      icon: Phone,
-      external: false,
-    },
-    {
-      href: waLink("Hello, I would like to chat about Alpine Crest Homestay."),
-      label: "WhatsApp",
-      icon: WhatsAppIcon,
-      external: true,
-    },
-    {
-      href: SITE.mapsDirections,
-      label: "Directions",
-      icon: MapPin,
-      external: true,
-    },
-    {
-      href: waLink(WA.general),
-      label: "Book",
-      icon: Home,
-      external: true,
-    },
-  ];
-
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-card/95 backdrop-blur lg:hidden">
-      <ul className="grid grid-cols-4">
-        {items.map(({ href, label, icon: Icon }) => (
-          <li key={label}>
-            <a
-              href={href}
-              target={href.startsWith("http") ? "_blank" : undefined}
-              rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-              className="flex flex-col items-center gap-1 px-1 py-2.5 text-[0.68rem] font-semibold text-foreground hover:bg-secondary/50 transition-colors"
-            >
-              {label === "Directions" ? (
-                <Icon className="h-4.5 w-4.5 text-moss" />
-              ) : label === "Book" ? (
-                <Icon className="h-4.5 w-4.5 text-primary" />
-              ) : (
-                <Icon className="h-4.5 w-4.5 text-moss" />
-              )}
-              <span className="truncate">{label}</span>
-            </a>
-          </li>
-        ))}
-      </ul>
+    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-card/95 p-2 backdrop-blur lg:hidden shadow-lift">
+      <div className="grid grid-cols-3 gap-1.5">
+        {/* Direct Call */}
+        <a
+          href={`tel:${SITE.phoneRaw}`}
+          className="flex items-center justify-center gap-1 rounded-xl border border-border bg-secondary py-2.5 text-[11px] font-bold text-foreground transition-active"
+        >
+          <Phone className="h-3.5 w-3.5 text-moss shrink-0" />
+          <span>Call Now</span>
+        </a>
+
+        {/* WhatsApp Booking */}
+        <a
+          href={waLink(WA.general)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center gap-1 rounded-xl bg-[#25D366] py-2.5 text-[11px] font-bold text-white shadow-soft transition-active"
+        >
+          <WhatsAppIcon className="h-3.5 w-3.5 shrink-0" />
+          <span>WhatsApp</span>
+        </a>
+
+        {/* Check Availability */}
+        <a
+          href="/contact"
+          className="flex items-center justify-center gap-1 rounded-xl bg-primary py-2.5 text-[11px] font-bold text-primary-foreground shadow-soft transition-active"
+        >
+          <CalendarCheck className="h-3.5 w-3.5 shrink-0 text-sand" />
+          <span>Check Dates</span>
+        </a>
+      </div>
     </div>
   );
 }

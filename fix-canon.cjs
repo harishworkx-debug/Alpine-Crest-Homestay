@@ -4,8 +4,8 @@ const path = require('path');
 function fixUrls(filePath) {
   let content = fs.readFileSync(filePath, 'utf8');
 
-  content = content.replace(/rel: "canonical", href: "\/([^"]*)"/g, 'rel: "canonical", href: "https://alpinecresthomestay.com/$1"');
-  content = content.replace(/property: "og:url", content: "\/([^"]*)"/g, 'property: "og:url", content: "https://alpinecresthomestay.com/$1"');
+  content = content.replace(/rel: "canonical", href: "https:\/\/alpinecresthomestay\.com/g, 'rel: "canonical", href: "https://www.alpinecresthomestay.com');
+  content = content.replace(/property: "og:url", content: "https:\/\/alpinecresthomestay\.com/g, 'property: "og:url", content: "https://www.alpinecresthomestay.com');
 
   // Soften wording and fix geographic names in h2/headings
   content = content.replace(/<h2>A Peaceful Homestay at Shimla<\/h2>/g, '<h2>A Peaceful Homestay Near Shimla</h2>');

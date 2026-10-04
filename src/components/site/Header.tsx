@@ -85,9 +85,9 @@ export function Header() {
           <WhatsAppLink
             message={WA.general}
             variant="primary"
-            className="hidden px-5 py-2.5 sm:inline-flex lg:hidden shadow-sm hover:shadow"
+            className="hidden px-4 py-2 text-xs sm:inline-flex shadow-sm hover:shadow"
           >
-            Book Your Stay
+            Check Availability
           </WhatsAppLink>
           
           <button

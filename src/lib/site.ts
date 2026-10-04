@@ -83,7 +83,7 @@ export const lodgingSchema = {
   "@type": "LodgingBusiness",
   name: SITE.name,
   description:
-    "Alpine Crest Homestay is a peaceful mountain-view homestay in Village Kathot near Theog, Himachal Pradesh, with private balconies, home-cooked Himachali food and easy access to Kufri and Shimla.",
+    "Alpine Crest Homestay is a peaceful mountain-view homestay in Village Kathot near Theog, Himachal Pradesh, offering 6 double rooms (Standard & Deluxe with Private Balconies), home-cooked Himachali meals (Breakfast & Dinner included), free private parking, and panoramic Himalayan views.",
   telephone: SITE.phoneRaw,
   address: {
     "@type": "PostalAddress",
@@ -100,8 +100,21 @@ export const lodgingSchema = {
   },
   url: "https://www.alpinecresthomestay.com/",
   image: "https://www.alpinecresthomestay.com/images/exterior.webp",
+  checkinTime: "12:00",
+  checkoutTime: "11:00",
+  numberOfRooms: 6,
+  priceRange: "₹2300 - ₹2800",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "5.0",
+    reviewCount: "20",
+    bestRating: "5",
+    worstRating: "1",
+  },
   sameAs: [
-    "https://maps.app.goo.gl/BmvDx9UcSdu7zsML8"
+    "https://maps.app.goo.gl/BmvDx9UcSdu7zsML8",
+    "https://www.goibibo.com/hotels/the-alpine-crest-homestay-hotel-in-theog-9122809434553810544/",
+    "https://www.makemytrip.com/hotels/p-homestays-in-theog.html",
   ],
   amenityFeature: [
     "Free Wi-Fi",
@@ -112,5 +125,6 @@ export const lodgingSchema = {
     "Garden",
     "Home-Cooked Himachali Food",
     "Mountain Views",
+    "24x7 Hot Water",
   ].map((n) => ({ "@type": "LocationFeatureSpecification", name: n, value: true })),
 };

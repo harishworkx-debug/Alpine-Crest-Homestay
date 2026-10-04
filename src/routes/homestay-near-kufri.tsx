@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Check, MapPin, Mountain, Car, Wifi, UtensilsCrossed } from "lucide-react";
+import { Check, MapPin, Mountain, Car, Wifi, UtensilsCrossed, HelpCircle, Navigation, ShieldCheck, Clock, Tag } from "lucide-react";
 import { WA, breadcrumbSchema } from "@/lib/site";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { WhatsAppLink } from "@/components/site/WhatsAppLink";
@@ -7,21 +7,22 @@ import { CallLink } from "@/components/site/CallLink";
 import { Reveal } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/SectionHeading";
 import { deluxeRoom, deluxeBalcony, standardRoom } from "@/lib/images";
+import { BookingForm } from "@/components/site/BookingForm";
 
 export const Route = createFileRoute("/homestay-near-kufri")({
   head: () => ({
     meta: [
-      { title: "Best Homestay Near Kufri | Mountain Stay Near Kufri" },
+      { title: "Best Homestay Near Kufri (22 km) | Mountain Stay in Theog" },
       {
         name: "description",
         content:
-          "Looking for a peaceful homestay near Kufri? Alpine Crest Homestay is a short drive from Kufri in Kathot near Theog, offering mountain-view rooms, private balconies and home-cooked food — a peaceful alternative to staying in Kufri.",
+          "Looking for a peaceful homestay near Kufri? Alpine Crest Homestay in Kathot near Theog is 22 km (35 mins) from Kufri. Rooms from ₹2,300 with balcony views, free parking & home-cooked meals.",
       },
-      { property: "og:title", content: "Best Homestay Near Kufri | Mountain Stay Near Kufri" },
+      { property: "og:title", content: "Best Homestay Near Kufri (22 km) | Mountain Stay in Theog" },
       {
         property: "og:description",
         content:
-          "Peaceful homestay a short drive from Kufri. Mountain views, private balconies, home-cooked food.",
+          "Peaceful homestay 22 km (35 mins) from Kufri. Mountain views, private balconies, free parking, home-cooked food.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.alpinecresthomestay.com/homestay-near-kufri/" },
@@ -44,33 +45,48 @@ function HomestayAtKufriPage() {
 
       <section className="container-page grid items-center gap-10 py-12 lg:grid-cols-2">
         <div>
-          <p className="eyebrow">Homestay Near Kufri</p>
-          <h1 className="mt-3 text-4xl leading-[1.1] sm:text-5xl">
-            Peaceful Homestay Near Kufri
+          <span className="eyebrow flex items-center gap-1.5">
+            <ShieldCheck className="h-4 w-4 text-moss" /> Honest &amp; Verified Information
+          </span>
+          <h1 className="mt-3 text-4xl leading-[1.1] sm:text-5xl font-display">
+            Peaceful Homestay Near Kufri (22 km / 35 Mins Drive)
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            If you are looking for a peaceful homestay near Kufri, Alpine Crest
-            Homestay offers a peaceful mountain stay in Village Kathot near Theog,
-            with convenient access toward Kufri. It is a quiet alternative to
-            staying in Kufri itself, which gets crowded in peak season and on
-            winter weekends — you get the mountain surroundings and easy access to
-            Kufri's sights without the noise and the crowds.
+            Looking for a peaceful homestay near Kufri? <strong>Alpine Crest Homestay</strong> is located in Village Kathot near Theog — exactly <strong>22 km (approx 35–45 minutes drive)</strong> from Kufri on NH-5. It is a serene, uncrowded alternative to staying inside Kufri's commercial tourist zone.
           </p>
+
+          {/* Quick Fact Pills */}
+          <div className="mt-6 flex flex-wrap gap-2 text-xs font-semibold">
+            <span className="rounded-full bg-secondary px-3 py-1 text-foreground flex items-center gap-1">
+              <Navigation className="h-3.5 w-3.5 text-moss" /> 22 km from Kufri
+            </span>
+            <span className="rounded-full bg-secondary px-3 py-1 text-foreground flex items-center gap-1">
+              <Clock className="h-3.5 w-3.5 text-moss" /> 35–45 mins drive
+            </span>
+            <span className="rounded-full bg-secondary px-3 py-1 text-foreground flex items-center gap-1">
+              <Tag className="h-3.5 w-3.5 text-moss" /> Rooms from ₹2,300 (Meals Included)
+            </span>
+            <span className="rounded-full bg-secondary px-3 py-1 text-foreground flex items-center gap-1">
+              <Car className="h-3.5 w-3.5 text-moss" /> Free Private Parking
+            </span>
+          </div>
+
           <div className="mt-7 flex flex-wrap gap-3">
             <WhatsAppLink message={WA.location}>Check Availability on WhatsApp</WhatsAppLink>
-            <CallLink variant="outline">Call Now</CallLink>
+            <CallLink variant="outline">Call Host Direct</CallLink>
             <Link
               to="/rooms"
-              className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold hover:bg-secondary"
+              className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-semibold hover:bg-secondary transition-colors"
             >
-              View Rooms
+              View Room Options
             </Link>
           </div>
         </div>
+
         <div className="overflow-hidden rounded-2xl shadow-soft">
           <img
             src={deluxeBalcony}
-            alt="Mountain view from Alpine Crest Homestay — best homestay at near Kufri"
+            alt="Mountain view from Alpine Crest Homestay near Kufri, Himachal Pradesh"
             width={1360}
             height={1020}
             loading="eager"
@@ -79,60 +95,86 @@ function HomestayAtKufriPage() {
         </div>
       </section>
 
+      {/* Booking Form Banner */}
+      <section className="container-page pb-12">
+        <BookingForm />
+      </section>
+
+      {/* Main Content & FAQ Breakdown for Kufri Searchers */}
       <section className="container-page grid gap-10 py-12 lg:grid-cols-2">
         <Reveal>
           <div className="prose-stay">
-            <h2>Why Stay Near Kufri?</h2>
+            <h2>Why Stay Near Theog Instead of Inside Kufri?</h2>
             <p>
-              Kufri is a popular hill station about 16 km from Shimla, known for its
-              winter snow and the Himalayan Nature Park. In peak season and on
-              winter weekends, it gets very busy — accommodation fills up and the
-              roads slow down. Staying a short drive away, near Theog, lets you
-              enjoy Kufri's sights during the day and return to a quiet setting in
-              the evening.
+              Kufri is one of the most famous stops in Himachal Pradesh for winter snow, horse rides, and the Himalayan Nature Park. However, during peak summer months and winter weekends, Kufri becomes heavily congested with tourist vehicles, commercial noise, and long traffic jams.
+            </p>
+            <p>
+              Staying at Alpine Crest Homestay in Village Kathot (near Theog) gives you the best of both worlds: you get pristine pine air, wide sunrise valley views, silence, authentic home hospitality, and private parking — all while staying just 35 minutes down the NH-5 highway from Kufri.
             </p>
 
-            <h2>Alpine Crest Homestay Near Kufri</h2>
-            <p>
-              Our homestay is located in Village Kathot near Theog, on the same
-              NH-5 corridor as Kufri. The drive between the two is straightforward,
-              making it easy to visit the Nature Park, the viewpoints at Mahasu
-              Peak and the snow activities in winter, then come back to a peaceful
-              balcony for the evening.
-            </p>
-            <p>
-              To be clear and honest: Alpine Crest Homestay is not in Kufri. It is
-              in Village Kathot near Theog, Himachal Pradesh. We say "near Kufri"
-              because the two are a short drive apart on the same road, and many
-              travellers visiting Kufri prefer to stay in the quieter Theog area.
-            </p>
+            <h2>Quick Answers for Kufri Visitors</h2>
 
-            <h2>Rooms With Mountain Views</h2>
-            <p>
-              The homestay offers two room types. The Standard Room has a
-              comfortable double bed and an attached bathroom with round-the-clock
-              hot water. The Deluxe Room adds a private balcony that opens onto the
-              deodar ridgeline, with a seating area for taking in the view. Both are
-              clean, simple and wood-warmed, with access to the shared lounge,
-              terrace and garden.
-            </p>
+            <div className="not-prose mt-6 grid gap-4">
+              <div className="rounded-2xl border border-border bg-card p-5 shadow-soft">
+                <h3 className="font-display text-base font-bold text-foreground flex items-center gap-2">
+                  <Navigation className="h-4 w-4 text-moss shrink-0" />
+                  How far is Alpine Crest from Kufri?
+                </h3>
+                <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  Alpine Crest Homestay is exactly <strong>22 km east of Kufri</strong> along National Highway 5 (NH-5), located at Village Kathot, near Theog.
+                </p>
+              </div>
 
-            <h2>Things to Do in Kufri</h2>
+              <div className="rounded-2xl border border-border bg-card p-5 shadow-soft">
+                <h3 className="font-display text-base font-bold text-foreground flex items-center gap-2">
+                  <Clock className="h-4 w-4 text-moss shrink-0" />
+                  How long does the drive take?
+                </h3>
+                <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  The drive takes approximately <strong>35 to 45 minutes</strong> by personal car or local taxi along smooth, wide asphalt road.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-card p-5 shadow-soft">
+                <h3 className="font-display text-base font-bold text-foreground flex items-center gap-2">
+                  <Car className="h-4 w-4 text-moss shrink-0" />
+                  Can I visit Kufri by local taxi?
+                </h3>
+                <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  Yes! Host <strong>Sahil Verma</strong> arranges verified local taxis for day trips to Kufri (Himalayan Nature Park, Mahasu Peak, snow points) and return.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-card p-5 shadow-soft">
+                <h3 className="font-display text-base font-bold text-foreground flex items-center gap-2">
+                  <Check className="h-4 w-4 text-moss shrink-0" />
+                  Is free private parking available?
+                </h3>
+                <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  Yes! We have spacious, paved private parking directly inside property gates, completely free for staying guests. Suitable for SUVs, sedans, and hatchbacks.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-border bg-card p-5 shadow-soft">
+                <h3 className="font-display text-base font-bold text-foreground flex items-center gap-2">
+                  <Tag className="h-4 w-4 text-moss shrink-0" />
+                  How much does a room cost?
+                </h3>
+                <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                  • <strong>Standard Room</strong>: ₹2,300 / night (includes breakfast &amp; dinner)<br />
+                  • <strong>Deluxe Room with Balcony</strong>: ₹2,800 / night (includes breakfast &amp; dinner)<br />
+                  No hidden service charges or agent markups when booking direct!
+                </p>
+              </div>
+            </div>
+
+            <h2 className="mt-8">Things to Do Around Kufri During Your Stay</h2>
             <ul>
-              <li>Himalayan Nature Park — see snow leopards and native wildlife</li>
-              <li>Mahasu Peak — the highest point around, with panoramic views</li>
-              <li>Winter snow activities — skiing, tobogganing and snow play</li>
-              <li>Kufri Fun World — amusement park with go-karting and rides</li>
-              <li>Fagu — a quiet viewpoint village a short drive beyond Kufri</li>
+              <li><strong>Himalayan Nature Park:</strong> Walk through serene cedar forest trails and spot Himalayan pheasants, monals, and brown bears.</li>
+              <li><strong>Mahasu Peak:</strong> The highest ridge point in Kufri offering panoramic snow-range views.</li>
+              <li><strong>Winter Snow Play:</strong> Enjoy tobogganing and snow fun during peak winter months (Jan–Feb).</li>
+              <li><strong>Fagu Apple Orchards:</strong> Visit quiet orchard viewpoints just 16 km from the homestay.</li>
             </ul>
-
-            <h2>How to Reach Kufri From Alpine Crest</h2>
-            <p>
-              The homestay is in Kathot near Theog, a short and scenic drive from
-              Kufri on NH-5. We can help arrange a taxi for the Kufri run and for
-              wider sightseeing. Free private parking is available right at the
-              house if you are driving yourself.
-            </p>
           </div>
         </Reveal>
 
@@ -148,16 +190,20 @@ function HomestayAtKufriPage() {
                 className="h-56 w-full object-cover"
               />
               <div className="p-5">
-                <h3 className="text-xl">Deluxe Room</h3>
+                <div className="flex justify-between items-center">
+                  <h3 className="text-xl font-bold">Deluxe Room (With Balcony)</h3>
+                  <span className="text-sm font-bold text-moss">₹2,800 / night</span>
+                </div>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Private balcony, seating area, valley view.
+                  Full pine wood panelling, sit-out nook &amp; private sunrise balcony overlooking valley. Includes breakfast &amp; dinner.
                 </p>
-                <WhatsAppLink message={WA.deluxe} variant="primary" className="mt-4 px-5 py-2.5">
-                  Enquire
+                <WhatsAppLink message={WA.deluxe} variant="primary" className="mt-4 px-5 py-2.5 w-full justify-center">
+                  Enquire Deluxe Room
                 </WhatsAppLink>
               </div>
             </div>
           </Reveal>
+
           <Reveal delay={0.2}>
             <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-soft">
               <img
@@ -169,12 +215,15 @@ function HomestayAtKufriPage() {
                 className="h-56 w-full object-cover"
               />
               <div className="p-5">
-                <h3 className="text-xl">Standard Room</h3>
+                <div className="flex justify-between items-center">
+                  <h3 className="text-xl font-bold">Standard Room</h3>
+                  <span className="text-sm font-bold text-moss">₹2,300 / night</span>
+                </div>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Comfortable double bed, attached bathroom, hot water.
+                  Comfortable double bed, warm pine accents, attached modern bathroom. Includes breakfast &amp; dinner.
                 </p>
-                <WhatsAppLink message={WA.standard} variant="primary" className="mt-4 px-5 py-2.5">
-                  Enquire
+                <WhatsAppLink message={WA.standard} variant="primary" className="mt-4 px-5 py-2.5 w-full justify-center">
+                  Enquire Standard Room
                 </WhatsAppLink>
               </div>
             </div>
@@ -182,17 +231,18 @@ function HomestayAtKufriPage() {
         </div>
       </section>
 
+      {/* Explore Nearby Destinations */}
       <section className="bg-secondary/60 py-16">
         <div className="container-page">
           <Reveal>
-            <SectionHeading eyebrow="Explore" title="Sights around Kufri and Theog" />
+            <SectionHeading eyebrow="Explore" title="Destinations Around Kufri and Theog" />
           </Reveal>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { name: "Kufri", to: "/places-to-visit/kufri" },
-              { name: "Theog", to: "/homestay-in-theog" },
-              { name: "Fagu", to: "/homestay-in-kathot" },
-              { name: "Shimla", to: "/homestay-near-shimla" },
+              { name: "Kufri (22 km)", to: "/places-to-visit/kufri" },
+              { name: "Theog (6 km)", to: "/homestay-in-theog" },
+              { name: "Fagu (16 km)", to: "/homestay-in-kathot" },
+              { name: "Shimla (38 km)", to: "/homestay-near-shimla" },
             ].map((d) => (
               <Link
                 key={d.name}
@@ -209,17 +259,16 @@ function HomestayAtKufriPage() {
 
       <section className="container-page py-16">
         <div className="rounded-2xl bg-primary px-8 py-12 text-center text-primary-foreground">
-          <h2 className="text-3xl">Book Your Stay Near Kufri</h2>
+          <h2 className="text-3xl font-display">Book Your Stay Near Kufri Today</h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-sand/85">
-            Send us a WhatsApp message with your travel dates and we will get back
-            to you with availability, pricing and taxi help for visiting Kufri.
+            Book direct with host Sahil Verma for verified low-rate guarantee, zero booking fees, and custom taxi assistance.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <WhatsAppLink message={WA.location} variant="primary">
-              Check Availability
+              Check Availability via WhatsApp
             </WhatsAppLink>
             <CallLink variant="outline" className="border-sand/50 text-sand hover:bg-sand/15">
-              Call Now
+              Call Host Now
             </CallLink>
             <Link
               to="/contact"
