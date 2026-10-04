@@ -77,17 +77,30 @@ export function Footer() {
       </div>
 
       <div className="border-t border-border">
-        <div className="container-page flex flex-col gap-3 py-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
+        <div className="container-page flex flex-col gap-4 py-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p className="flex items-start gap-2">
             <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
             {SITE.addressFull}
           </p>
-          <p className="flex items-center gap-2">
-            <Phone className="h-4 w-4 shrink-0" aria-hidden="true" />
-            <a href={`tel:${SITE.phoneRaw}`} className="hover:text-pine">
-              {SITE.phoneDisplay}
-            </a>
-          </p>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-6">
+            <p className="flex items-center gap-2">
+              <Phone className="h-4 w-4 shrink-0" aria-hidden="true" />
+              <a href={`tel:${SITE.phoneRaw}`} className="hover:text-pine">
+                {SITE.phoneDisplay}
+              </a>
+            </p>
+            <p className="text-xs sm:text-sm">
+              Powered by{" "}
+              <a
+                href="https://www.techhim.online/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-pine hover:underline"
+              >
+                TechHim solution
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
