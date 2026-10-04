@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alpinecresthomestay.com/sitemap.xml
+Sitemap: https://www.alpinecresthomestay.com/sitemap.xml
+
