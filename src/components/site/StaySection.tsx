@@ -11,7 +11,7 @@ const stayCards = [
     heading: "Homestay in Theog",
     description:
       "A family-run homestay just a short drive from Theog — comfortable rooms, private balconies and warm local hospitality in the upper Shimla hills.",
-    location: "A short drive to Theog",
+    location: "Approx 6 km to Theog Center",
   },
   {
     to: "/homestay-near-kufri",
@@ -35,7 +35,7 @@ const stayCards = [
     heading: "Homestay in Kathot",
     description:
       "A peaceful village homestay located right in Kathot. Wake up to mountain views and experience warm, home-cooked Himachali hospitality.",
-    location: "Village Kathot · Theog",
+    location: "Village Kathot · Theog (0 km)",
   },
   {
     to: "/homestay-near-fagu",
@@ -51,7 +51,7 @@ const stayCards = [
     heading: "Explore Narkanda",
     description:
       "A peaceful base with access for day trips to Narkanda, Hatu Peak and the apple belt of Kotgarh — mountain views and home-cooked food.",
-    location: "Scenic drive to Narkanda",
+    location: "Approx 45 km to Narkanda",
   },
   {
     to: "/homestay-near-chail",

@@ -28,6 +28,8 @@ import { StaySection } from "@/components/site/StaySection";
 import { FAQSection } from "@/components/site/FAQSection";
 import { MapEmbed } from "@/components/site/MapEmbed";
 import { ReviewsSection } from "@/components/site/ReviewsSection";
+import { BookingForm } from "@/components/site/BookingForm";
+import { TrustSignals } from "@/components/site/TrustSignals";
 import {
   exterior,
   deluxeRoom,
@@ -45,9 +47,9 @@ import {
 export const Route = createFileRoute("/")({
   head: () =>
     pageMeta({
-      title: "Alpine Crest Homestay | Mountain View Homestay in Theog",
+      title: "Homestay in Theog | Best Mountain View Homestay | Alpine Crest",
       description:
-        "Stay at Alpine Crest Homestay in Kathot, Theog, Himachal Pradesh. Enjoy peaceful mountain views, comfortable rooms and warm Himachali hospitality near Kufri and Shimla.",
+        "Alpine Crest Homestay is a peaceful family homestay in Theog (Village Kathot, HP). Private sunrise balconies, mountain-view rooms, home-cooked food & free parking near Kufri & Shimla.",
       path: "/",
     }),
   component: HomePage,
@@ -93,11 +95,11 @@ const whyStay = [
 ];
 
 const destinations = [
-  { name: "Theog Town", distance: "6 km", slug: "/places-to-visit/theog", image: "/images/destinations/image.png", alt: "Mountain landscape near Theog, Himachal Pradesh" },
-  { name: "Kufri", distance: "22 km", slug: "/places-to-visit/kufri", image: "/images/destinations/image copy.png", alt: "Snowy mountain peaks near Kufri, Himachal Pradesh" },
-  { name: "Fagu", distance: "30 km", slug: "/places-to-visit/fagu", image: "/images/destinations/image copy 2.png", alt: "Himalayan village and valley near Fagu, Himachal Pradesh" },
+  { name: "Theog Town Center", distance: "6 km", slug: "/places-to-visit/theog", image: "/images/destinations/image.png", alt: "Mountain landscape near Theog, Himachal Pradesh" },
+  { name: "Fagu Viewpoints", distance: "16 km", slug: "/places-to-visit/fagu", image: "/images/destinations/image copy 2.png", alt: "Himalayan village and valley near Fagu, Himachal Pradesh" },
+  { name: "Kufri Nature Park", distance: "22 km", slug: "/places-to-visit/kufri", image: "/images/destinations/image copy.png", alt: "Snowy mountain peaks near Kufri, Himachal Pradesh" },
   { name: "Shimla Mall Road", distance: "38 km", slug: "/places-to-visit/shimla", image: "/images/destinations/image copy 3.png", alt: "Shimla Mall Road and colonial architecture, Himachal Pradesh" },
-  { name: "Chail", distance: "45 km", slug: "/places-to-visit/chail", image: "/images/destinations/image copy 4.png", alt: "Dense pine and deodar forest near Chail, Himachal Pradesh" },
+  { name: "Narkanda & Hatu Peak", distance: "45 km", slug: "/places-to-visit/narkanda", image: "/images/destinations/image copy 4.png", alt: "Dense pine and deodar forest near Narkanda, Himachal Pradesh" },
 ];
 
 function HomePage() {
@@ -189,31 +191,10 @@ function HomePage() {
           </motion.div>
         </div>
 
-        {/* Quick booking bar */}
-        <div className="container-page -mt-9 relative z-10">
+        {/* Interactive Booking Form */}
+        <div className="container-page -mt-12 relative z-10 max-w-5xl mx-auto">
           <Reveal>
-            <div className="grid gap-4 rounded-2xl border border-border bg-card p-5 shadow-lift sm:grid-cols-[repeat(3,minmax(0,1fr))_auto] sm:items-center">
-              <div>
-                <p className="eyebrow">Check-in</p>
-                <p className="mt-1 text-sm text-foreground">From 12:00 PM</p>
-              </div>
-              <div>
-                <p className="eyebrow">Check-out</p>
-                <p className="mt-1 text-sm text-foreground">Until 11:00 AM</p>
-              </div>
-              <div>
-                <p className="eyebrow">Direct Booking</p>
-                <p className="mt-1 text-sm text-foreground">No agent commission</p>
-              </div>
-              <div className="flex gap-2">
-                <WhatsAppLink message={WA.general} className="w-full sm:w-auto">
-                  Check Availability
-                </WhatsAppLink>
-                <CallLink className="w-full sm:w-auto" ariaLabel="Call Alpine Crest Homestay">
-                  <Phone className="h-4 w-4" aria-hidden="true" />
-                </CallLink>
-              </div>
-            </div>
+            <BookingForm />
           </Reveal>
         </div>
       </section>
@@ -369,13 +350,13 @@ function HomePage() {
                     </ul>
                     <div className="mt-6 flex flex-wrap gap-3">
                       <WhatsAppLink message={r.message} className="px-5 py-2.5">
-                        Enquire
+                        {r.name.includes("Standard") ? "Book Standard Room (₹2,300)" : "Book Deluxe Balcony (₹2,800)"}
                       </WhatsAppLink>
                       <Link
                         to="/rooms"
                         className="inline-flex items-center justify-center rounded-full border border-border px-5 py-2.5 text-sm font-semibold hover:bg-secondary"
                       >
-                        Details
+                        Room Details
                       </Link>
                     </div>
                   </div>
@@ -385,6 +366,9 @@ function HomePage() {
           </StaggerGroup>
         </div>
       </section>
+
+      {/* Trust Signals & Direct Booking Guarantees */}
+      <TrustSignals />
 
       {/* Private Balcony Experience */}
       <section className="container-page grid gap-10 py-20 lg:grid-cols-2 lg:items-center">

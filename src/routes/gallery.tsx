@@ -16,7 +16,18 @@ export const Route = createFileRoute("/gallery")({
   component: GalleryPage,
 });
 
-const categories = ["All", "Property", "Rooms", "Balcony", "Views", "Nature", "Food"];
+const categories = [
+  "All",
+  "Rooms",
+  "Balcony Views",
+  "Snow Views",
+  "Sunrise",
+  "Food",
+  "Property",
+  "Bathroom",
+  "Parking",
+  "Surroundings",
+];
 
 function GalleryPage() {
   const [active, setActive] = useState("All");
@@ -46,24 +57,24 @@ function GalleryPage() {
       <Breadcrumbs items={[{ name: "Gallery" }]} />
 
       <section className="container-page py-10">
-        <p className="eyebrow">Gallery</p>
+        <p className="eyebrow">Real Property Gallery</p>
         <h1 className="mt-3 max-w-2xl text-4xl sm:text-5xl">Alpine Crest, in pictures</h1>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          A look at the property, the rooms, the views and the food. All images are
-          of the actual homestay and its surroundings near Theog, Himachal Pradesh.
+          Explore actual photos of our rooms, private sunrise balconies, snow views, home-cooked Himachali food, and property surroundings in Kathot, near Theog.
         </p>
       </section>
 
-      <section className="container-page pb-20">
+      <section className="container-page pb-16">
+        {/* Category Filters */}
         <div className="flex flex-wrap gap-2 pb-8">
           {categories.map((cat) => (
             <button
               key={cat}
               type="button"
               onClick={() => setActive(cat)}
-              className={`rounded-full px-4 py-2 text-sm font-semibold transition-colors ${
+              className={`rounded-full px-4 py-2 text-xs sm:text-sm font-semibold transition-all ${
                 active === cat
-                  ? "bg-primary text-primary-foreground"
+                  ? "bg-primary text-primary-foreground shadow-sm"
                   : "border border-border bg-card text-foreground hover:bg-secondary"
               }`}
             >
@@ -72,14 +83,15 @@ function GalleryPage() {
           ))}
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Image Grid with Descriptive Captions */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((img, i) => (
             <div
               key={`${img.alt}-${i}`}
               onClick={() => setLightboxIndex(i)}
-              className="cursor-pointer overflow-hidden rounded-2xl border border-border bg-card shadow-soft group"
+              className="cursor-pointer overflow-hidden rounded-2xl border border-border bg-card shadow-soft hover:shadow-hover transition-all duration-300 group flex flex-col justify-between"
             >
-              <div className="relative aspect-[4/3] w-full overflow-hidden">
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted">
                 <img
                   src={img.src}
                   alt={img.alt}
@@ -88,11 +100,42 @@ function GalleryPage() {
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="absolute top-3 left-3 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] font-semibold text-white uppercase tracking-wider">
+                  {img.category}
+                </div>
                 <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/10" />
               </div>
-              <p className="px-4 py-3 text-xs text-muted-foreground">{img.alt}</p>
+              <div className="p-4 flex-1 flex flex-col justify-between">
+                <p className="text-xs sm:text-sm font-medium leading-snug text-foreground group-hover:text-primary transition-colors">
+                  {img.caption}
+                </p>
+              </div>
             </div>
           ))}
+        </div>
+
+        {/* Direct Booking Prompt */}
+        <div className="mt-16 rounded-2xl border border-primary/20 bg-primary/5 p-8 text-center sm:p-10">
+          <h2 className="text-2xl font-bold text-foreground sm:text-3xl">Like What You See?</h2>
+          <p className="mt-3 text-sm sm:text-base text-muted-foreground max-w-xl mx-auto">
+            Book direct with host Sahil Verma for verified low-rate guarantee, zero booking fees, and custom room preference.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="https://wa.me/919816656787?text=Hello%20Sahil,%20I%20saw%20the%20gallery%20and%20want%20to%20check%20room%20availability."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-emerald-600 px-6 py-3 text-sm font-semibold text-white hover:bg-emerald-700 transition-colors shadow-soft"
+            >
+              Check Availability via WhatsApp
+            </a>
+            <a
+              href="/rooms"
+              className="rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground hover:bg-secondary transition-colors"
+            >
+              View Room Rates & Inclusions
+            </a>
+          </div>
         </div>
       </section>
 
@@ -120,9 +163,14 @@ function GalleryPage() {
             <img 
               src={filtered[lightboxIndex].src} 
               alt={filtered[lightboxIndex].alt}
-              className="max-h-[75vh] w-auto object-contain rounded shadow-2xl"
+              className="max-h-[70vh] w-auto object-contain rounded shadow-2xl"
             />
-            <p className="text-white/80 mt-6 text-center">{filtered[lightboxIndex].alt}</p>
+            <div className="mt-4 text-center">
+              <span className="inline-block bg-white/10 px-3 py-1 rounded-full text-xs font-semibold text-white/90 uppercase tracking-wider mb-2">
+                {filtered[lightboxIndex].category}
+              </span>
+              <p className="text-white text-base sm:text-lg font-medium max-w-2xl">{filtered[lightboxIndex].caption}</p>
+            </div>
           </div>
 
           <button

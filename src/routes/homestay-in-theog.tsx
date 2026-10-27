@@ -69,7 +69,7 @@ function HomestayAtTheogPage() {
         <div className="overflow-hidden rounded-2xl shadow-soft">
           <img
             src={exterior}
-            alt="Alpine Crest Homestay — best homestay at near Theog, Himachal Pradesh"
+            alt="Alpine Crest Homestay near Theog, Himachal Pradesh"
             width={1360}
             height={1020}
             loading="eager"
@@ -92,7 +92,7 @@ function HomestayAtTheogPage() {
               wind through the deodars and distant temple bells.
             </p>
             <p>
-              As a homestay at near Theog, we keep things simple and personal. The
+              As a homestay near Theog, we keep things simple and personal. The
               house is run by the family that lives here, so you get genuine local
               hospitality — directions to the best sunrise spot, a cup of chai when
               you arrive, and a kitchen that cooks what is in season.
