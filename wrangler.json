@@ -5,6 +5,9 @@
   "compatibility_flags": [
     "nodejs_compat"
   ],
+  "build": {
+    "command": "bun run build"
+  },
   "main": ".output/server/index.mjs",
   "assets": {
     "binding": "ASSETS",
