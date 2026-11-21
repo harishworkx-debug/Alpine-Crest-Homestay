@@ -1,5 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Check, MapPin, Mountain, Car, Wifi, UtensilsCrossed, HelpCircle, Navigation, ShieldCheck, Clock, Tag } from "lucide-react";
+import {
+  Check,
+  MapPin,
+  Mountain,
+  Car,
+  Wifi,
+  UtensilsCrossed,
+  HelpCircle,
+  Navigation,
+  ShieldCheck,
+  Clock,
+  Tag,
+} from "lucide-react";
 import { WA, breadcrumbSchema } from "@/lib/site";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { WhatsAppLink } from "@/components/site/WhatsAppLink";
@@ -18,7 +30,10 @@ export const Route = createFileRoute("/homestay-near-kufri")({
         content:
           "Looking for a peaceful homestay near Kufri? Alpine Crest Homestay in Kathot near Theog is 22 km (35 mins) from Kufri. Rooms from ₹2,300 with balcony views, free parking & home-cooked meals.",
       },
-      { property: "og:title", content: "Best Homestay Near Kufri (22 km) | Mountain Stay in Theog" },
+      {
+        property: "og:title",
+        content: "Best Homestay Near Kufri (22 km) | Mountain Stay in Theog",
+      },
       {
         property: "og:description",
         content:
@@ -52,7 +67,10 @@ function HomestayAtKufriPage() {
             Peaceful Homestay Near Kufri (22 km / 35 Mins Drive)
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            Looking for a peaceful homestay near Kufri? <strong>Alpine Crest Homestay</strong> is located in Village Kathot near Theog — exactly <strong>22 km (approx 35–45 minutes drive)</strong> from Kufri on NH-5. It is a serene, uncrowded alternative to staying inside Kufri's commercial tourist zone.
+            Looking for a peaceful homestay near Kufri? <strong>Alpine Crest Homestay</strong> is
+            located in Village Kathot near Theog — exactly{" "}
+            <strong>22 km (approx 35–45 minutes drive)</strong> from Kufri on NH-5. It is a serene,
+            uncrowded alternative to staying inside Kufri's commercial tourist zone.
           </p>
 
           {/* Quick Fact Pills */}
@@ -106,10 +124,16 @@ function HomestayAtKufriPage() {
           <div className="prose-stay">
             <h2>Why Stay Near Theog Instead of Inside Kufri?</h2>
             <p>
-              Kufri is one of the most famous stops in Himachal Pradesh for winter snow, horse rides, and the Himalayan Nature Park. However, during peak summer months and winter weekends, Kufri becomes heavily congested with tourist vehicles, commercial noise, and long traffic jams.
+              Kufri is one of the most famous stops in Himachal Pradesh for winter snow, horse
+              rides, and the Himalayan Nature Park. However, during peak summer months and winter
+              weekends, Kufri becomes heavily congested with tourist vehicles, commercial noise, and
+              long traffic jams.
             </p>
             <p>
-              Staying at Alpine Crest Homestay in Village Kathot (near Theog) gives you the best of both worlds: you get pristine pine air, wide sunrise valley views, silence, authentic home hospitality, and private parking — all while staying just 35 minutes down the NH-5 highway from Kufri.
+              Staying at Alpine Crest Homestay in Village Kathot (near Theog) gives you the best of
+              both worlds: you get pristine pine air, wide sunrise valley views, silence, authentic
+              home hospitality, and private parking — all while staying just 35 minutes down the
+              NH-5 highway from Kufri.
             </p>
 
             <h2>Quick Answers for Kufri Visitors</h2>
@@ -121,7 +145,8 @@ function HomestayAtKufriPage() {
                   How far is Alpine Crest from Kufri?
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  Alpine Crest Homestay is exactly <strong>22 km east of Kufri</strong> along National Highway 5 (NH-5), located at Village Kathot, near Theog.
+                  Alpine Crest Homestay is exactly <strong>22 km east of Kufri</strong> along
+                  National Highway 5 (NH-5), located at Village Kathot, near Theog.
                 </p>
               </div>
 
@@ -131,7 +156,8 @@ function HomestayAtKufriPage() {
                   How long does the drive take?
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  The drive takes approximately <strong>35 to 45 minutes</strong> by personal car or local taxi along smooth, wide asphalt road.
+                  The drive takes approximately <strong>35 to 45 minutes</strong> by personal car or
+                  local taxi along smooth, wide asphalt road.
                 </p>
               </div>
 
@@ -141,7 +167,8 @@ function HomestayAtKufriPage() {
                   Can I visit Kufri by local taxi?
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  Yes! Host <strong>Sahil Verma</strong> arranges verified local taxis for day trips to Kufri (Himalayan Nature Park, Mahasu Peak, snow points) and return.
+                  Yes! Host <strong>Sahil Verma</strong> arranges verified local taxis for day trips
+                  to Kufri (Himalayan Nature Park, Mahasu Peak, snow points) and return.
                 </p>
               </div>
 
@@ -151,7 +178,8 @@ function HomestayAtKufriPage() {
                   Is free private parking available?
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  Yes! We have spacious, paved private parking directly inside property gates, completely free for staying guests. Suitable for SUVs, sedans, and hatchbacks.
+                  Yes! We have spacious, paved private parking directly inside property gates,
+                  completely free for staying guests. Suitable for SUVs, sedans, and hatchbacks.
                 </p>
               </div>
 
@@ -161,8 +189,10 @@ function HomestayAtKufriPage() {
                   How much does a room cost?
                 </h3>
                 <p className="mt-2 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                  • <strong>Standard Room</strong>: ₹2,300 / night (includes breakfast &amp; dinner)<br />
-                  • <strong>Deluxe Room with Balcony</strong>: ₹2,800 / night (includes breakfast &amp; dinner)<br />
+                  • <strong>Standard Room</strong>: ₹2,300 / night (includes breakfast &amp; dinner)
+                  <br />• <strong>Deluxe Room with Balcony</strong>: ₹2,800 / night (includes
+                  breakfast &amp; dinner)
+                  <br />
                   No hidden service charges or agent markups when booking direct!
                 </p>
               </div>
@@ -170,10 +200,22 @@ function HomestayAtKufriPage() {
 
             <h2 className="mt-8">Things to Do Around Kufri During Your Stay</h2>
             <ul>
-              <li><strong>Himalayan Nature Park:</strong> Walk through serene cedar forest trails and spot Himalayan pheasants, monals, and brown bears.</li>
-              <li><strong>Mahasu Peak:</strong> The highest ridge point in Kufri offering panoramic snow-range views.</li>
-              <li><strong>Winter Snow Play:</strong> Enjoy tobogganing and snow fun during peak winter months (Jan–Feb).</li>
-              <li><strong>Fagu Apple Orchards:</strong> Visit quiet orchard viewpoints just 16 km from the homestay.</li>
+              <li>
+                <strong>Himalayan Nature Park:</strong> Walk through serene cedar forest trails and
+                spot Himalayan pheasants, monals, and brown bears.
+              </li>
+              <li>
+                <strong>Mahasu Peak:</strong> The highest ridge point in Kufri offering panoramic
+                snow-range views.
+              </li>
+              <li>
+                <strong>Winter Snow Play:</strong> Enjoy tobogganing and snow fun during peak winter
+                months (Jan–Feb).
+              </li>
+              <li>
+                <strong>Fagu Apple Orchards:</strong> Visit quiet orchard viewpoints just 16 km from
+                the homestay.
+              </li>
             </ul>
           </div>
         </Reveal>
@@ -195,9 +237,14 @@ function HomestayAtKufriPage() {
                   <span className="text-sm font-bold text-moss">₹2,800 / night</span>
                 </div>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Full pine wood panelling, sit-out nook &amp; private sunrise balcony overlooking valley. Includes breakfast &amp; dinner.
+                  Full pine wood panelling, sit-out nook &amp; private sunrise balcony overlooking
+                  valley. Includes breakfast &amp; dinner.
                 </p>
-                <WhatsAppLink message={WA.deluxe} variant="primary" className="mt-4 px-5 py-2.5 w-full justify-center">
+                <WhatsAppLink
+                  message={WA.deluxe}
+                  variant="primary"
+                  className="mt-4 px-5 py-2.5 w-full justify-center"
+                >
                   Enquire Deluxe Room
                 </WhatsAppLink>
               </div>
@@ -220,9 +267,14 @@ function HomestayAtKufriPage() {
                   <span className="text-sm font-bold text-moss">₹2,300 / night</span>
                 </div>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Comfortable double bed, warm pine accents, attached modern bathroom. Includes breakfast &amp; dinner.
+                  Comfortable double bed, warm pine accents, attached modern bathroom. Includes
+                  breakfast &amp; dinner.
                 </p>
-                <WhatsAppLink message={WA.standard} variant="primary" className="mt-4 px-5 py-2.5 w-full justify-center">
+                <WhatsAppLink
+                  message={WA.standard}
+                  variant="primary"
+                  className="mt-4 px-5 py-2.5 w-full justify-center"
+                >
                   Enquire Standard Room
                 </WhatsAppLink>
               </div>
@@ -261,7 +313,8 @@ function HomestayAtKufriPage() {
         <div className="rounded-2xl bg-primary px-8 py-12 text-center text-primary-foreground">
           <h2 className="text-3xl font-display">Book Your Stay Near Kufri Today</h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-sand/85">
-            Book direct with host Sahil Verma for verified low-rate guarantee, zero booking fees, and custom taxi assistance.
+            Book direct with host Sahil Verma for verified low-rate guarantee, zero booking fees,
+            and custom taxi assistance.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <WhatsAppLink message={WA.location} variant="primary">

@@ -13,7 +13,7 @@ import {
   Clock,
   ShieldCheck,
   PlusCircle,
-  CalendarCheck
+  CalendarCheck,
 } from "lucide-react";
 import { pageMeta, WA } from "@/lib/site";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
@@ -117,7 +117,9 @@ function RoomsPage() {
           Mountain Rooms with Honest Comfort
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Alpine Crest Homestay has 6 double rooms in total — 3 Deluxe Rooms with private sunrise balconies and 3 Standard Rooms. Every booking includes freshly prepared home-cooked breakfast and dinner.
+          Alpine Crest Homestay has 6 double rooms in total — 3 Deluxe Rooms with private sunrise
+          balconies and 3 Standard Rooms. Every booking includes freshly prepared home-cooked
+          breakfast and dinner.
         </p>
       </section>
 
@@ -149,12 +151,16 @@ function RoomsPage() {
                 {/* Name & Pricing Header */}
                 <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-border pb-4 mb-4">
                   <div>
-                    <h2 className="text-2xl sm:text-3xl font-display text-foreground">{room.name}</h2>
+                    <h2 className="text-2xl sm:text-3xl font-display text-foreground">
+                      {room.name}
+                    </h2>
                     <p className="text-xs font-medium text-moss mt-0.5">{room.tagline}</p>
                   </div>
                   <div className="sm:text-right">
                     <span className="text-2xl font-bold text-foreground">{room.price}</span>
-                    <p className="text-[0.72rem] font-semibold text-moss">Breakfast &amp; Dinner Included</p>
+                    <p className="text-[0.72rem] font-semibold text-moss">
+                      Breakfast &amp; Dinner Included
+                    </p>
                   </div>
                 </div>
 
@@ -166,52 +172,72 @@ function RoomsPage() {
                 <div className="grid gap-3 sm:grid-cols-2 text-xs border-t border-border/60 pt-4 mb-6">
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Maximize2 className="h-4 w-4 text-moss shrink-0" />
-                    <span><strong>Room Size:</strong> {room.roomSize}</span>
+                    <span>
+                      <strong>Room Size:</strong> {room.roomSize}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Bed className="h-4 w-4 text-moss shrink-0" />
-                    <span><strong>Bed Type:</strong> {room.bedType}</span>
+                    <span>
+                      <strong>Bed Type:</strong> {room.bedType}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Users className="h-4 w-4 text-moss shrink-0" />
-                    <span><strong>Max Occupancy:</strong> {room.maxOccupancy}</span>
+                    <span>
+                      <strong>Max Occupancy:</strong> {room.maxOccupancy}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <PlusCircle className="h-4 w-4 text-moss shrink-0" />
-                    <span><strong>Extra Bed:</strong> {room.extraBed}</span>
+                    <span>
+                      <strong>Extra Bed:</strong> {room.extraBed}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Mountain className="h-4 w-4 text-moss shrink-0" />
-                    <span><strong>View:</strong> {room.view}</span>
+                    <span>
+                      <strong>View:</strong> {room.view}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <ShowerHead className="h-4 w-4 text-moss shrink-0" />
-                    <span><strong>Bathroom:</strong> {room.bathroom}</span>
+                    <span>
+                      <strong>Bathroom:</strong> {room.bathroom}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Flame className="h-4 w-4 text-moss shrink-0" />
-                    <span><strong>Heating:</strong> {room.heating}</span>
+                    <span>
+                      <strong>Heating:</strong> {room.heating}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Wifi className="h-4 w-4 text-moss shrink-0" />
-                    <span><strong>Wi-Fi:</strong> {room.wifi}</span>
+                    <span>
+                      <strong>Wi-Fi:</strong> {room.wifi}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <UtensilsCrossed className="h-4 w-4 text-moss shrink-0" />
-                    <span><strong>Meals:</strong> {room.foodInclusion}</span>
+                    <span>
+                      <strong>Meals:</strong> {room.foodInclusion}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <ShieldCheck className="h-4 w-4 text-moss shrink-0" />
-                    <span><strong>Cancellation:</strong> {room.cancellation}</span>
+                    <span>
+                      <strong>Cancellation:</strong> {room.cancellation}
+                    </span>
                   </div>
                 </div>
 
@@ -245,7 +271,9 @@ function RoomsPage() {
         <div className="container-page grid gap-8 lg:grid-cols-2 lg:items-center">
           <div>
             <span className="eyebrow">Direct Host Commitment</span>
-            <h2 className="mt-2 text-3xl font-display text-foreground">Practical Details &amp; Policies</h2>
+            <h2 className="mt-2 text-3xl font-display text-foreground">
+              Practical Details &amp; Policies
+            </h2>
             <ul className="mt-5 grid gap-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-moss" aria-hidden="true" />
@@ -253,7 +281,8 @@ function RoomsPage() {
               </li>
               <li className="flex items-start gap-2">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-moss" aria-hidden="true" />
-                Fresh home-cooked Himachali meals (Breakfast &amp; Dinner) included with both room options
+                Fresh home-cooked Himachali meals (Breakfast &amp; Dinner) included with both room
+                options
               </li>
               <li className="flex items-start gap-2">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-moss" aria-hidden="true" />
@@ -281,7 +310,10 @@ function RoomsPage() {
             </div>
             <div className="border-t border-border pt-4 text-xs text-muted-foreground">
               <p className="font-semibold text-foreground mb-1">Guaranteed Inventory Match:</p>
-              <p>6 Double Rooms (3 Standard + 3 Deluxe Balcony). Aligned with official extranet records.</p>
+              <p>
+                6 Double Rooms (3 Standard + 3 Deluxe Balcony). Aligned with official extranet
+                records.
+              </p>
             </div>
           </div>
         </div>

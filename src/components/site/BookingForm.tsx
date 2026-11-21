@@ -80,9 +80,7 @@ export function BookingForm({ className = "" }: { className?: string }) {
             <option value="Deluxe Room (With Balcony) — ₹2,800/night">
               Deluxe Balcony (₹2,800/night)
             </option>
-            <option value="Standard Room — ₹2,300/night">
-              Standard Room (₹2,300/night)
-            </option>
+            <option value="Standard Room — ₹2,300/night">Standard Room (₹2,300/night)</option>
             <option value="Any Available Room">Any Available Room</option>
           </select>
         </div>

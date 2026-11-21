@@ -40,12 +40,7 @@ function BlogArticlePage() {
 
   return (
     <>
-      <Breadcrumbs
-        items={[
-          { name: "Blog", path: "/blog" },
-          { name: article.title },
-        ]}
-      />
+      <Breadcrumbs items={[{ name: "Blog", path: "/blog" }, { name: article.title }]} />
 
       <article className="container-page py-10">
         <Link
@@ -85,9 +80,8 @@ function BlogArticlePage() {
         <div className="mt-12 max-w-3xl rounded-2xl border border-border bg-card p-6 shadow-soft">
           <h2 className="text-2xl">Plan your stay</h2>
           <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            If this guide was useful, consider staying with us. Alpine Crest
-            Homestay is a peaceful mountain base near Theog, with easy access to
-            all the destinations above.
+            If this guide was useful, consider staying with us. Alpine Crest Homestay is a peaceful
+            mountain base near Theog, with easy access to all the destinations above.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <WhatsAppLink message={WA.general}>Check Availability</WhatsAppLink>
@@ -127,7 +121,8 @@ function BlogArticlePage() {
             {others.map((a) => (
               <Link
                 key={a.slug}
-                to={`/blog/${a.slug}`}
+                to="/blog/$slug"
+                params={{ slug: a.slug }}
                 className="rounded-2xl border border-border bg-card p-6 shadow-soft transition-colors hover:bg-secondary"
               >
                 <h2 className="text-xl">{a.title}</h2>

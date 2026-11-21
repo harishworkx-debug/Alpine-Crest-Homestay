@@ -13,7 +13,10 @@ export const Route = createFileRoute("/places-to-visit/")({
         content:
           "Explore Theog, Kufri, Shimla, Fagu, Narkanda, Chail and more from Alpine Crest Homestay. Guides to the best destinations in the upper Shimla hills.",
       },
-      { property: "og:title", content: "Places to Visit Near Theog & Kufri | Alpine Crest Homestay" },
+      {
+        property: "og:title",
+        content: "Places to Visit Near Theog & Kufri | Alpine Crest Homestay",
+      },
       {
         property: "og:description",
         content:
@@ -40,13 +43,11 @@ function PlacesIndexPage() {
 
       <section className="container-page py-10">
         <p className="eyebrow">Places to Visit</p>
-        <h1 className="mt-3 max-w-2xl text-4xl sm:text-5xl">
-          Explore Theog, Kufri & Shimla
-        </h1>
+        <h1 className="mt-3 max-w-2xl text-4xl sm:text-5xl">Explore Theog, Kufri & Shimla</h1>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          The upper Shimla hills have more to offer than just the Mall Road. Here
-          are guides to the destinations within easy reach of Alpine Crest
-          Homestay, from the quiet ridge at Theog to the ski slopes of Narkanda.
+          The upper Shimla hills have more to offer than just the Mall Road. Here are guides to the
+          destinations within easy reach of Alpine Crest Homestay, from the quiet ridge at Theog to
+          the ski slopes of Narkanda.
         </p>
       </section>
 
@@ -54,7 +55,8 @@ function PlacesIndexPage() {
         {destinations.map((d) => (
           <Link
             key={d.slug}
-            to={`/places-to-visit/${d.slug}`}
+            to="/places-to-visit/$slug"
+            params={{ slug: d.slug }}
             className="overflow-hidden rounded-2xl border border-border bg-card shadow-soft transition-colors hover:bg-secondary"
           >
             <div className="p-6">
@@ -63,9 +65,7 @@ function PlacesIndexPage() {
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {d.intro.slice(0, 120)}…
               </p>
-              <p className="mt-4 text-sm font-semibold text-moss">
-                Read the {d.name} guide
-              </p>
+              <p className="mt-4 text-sm font-semibold text-moss">Read the {d.name} guide</p>
             </div>
           </Link>
         ))}

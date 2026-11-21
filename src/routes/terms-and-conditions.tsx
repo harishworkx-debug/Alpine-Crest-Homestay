@@ -21,23 +21,21 @@ function TermsPage() {
         <h1 className="text-4xl sm:text-5xl">Terms & Conditions</h1>
         <div className="prose-stay mt-8 max-w-3xl">
           <p>
-            These terms apply to enquiries and bookings made with Alpine Crest
-            Homestay, Village Kathot, Theog, Himachal Pradesh. By contacting us or
-            making a booking enquiry, you agree to these terms.
+            These terms apply to enquiries and bookings made with Alpine Crest Homestay, Village
+            Kathot, Theog, Himachal Pradesh. By contacting us or making a booking enquiry, you agree
+            to these terms.
           </p>
           <h2>Bookings and enquiries</h2>
           <p>
-            All booking enquiries are made directly through WhatsApp or other
-            contact methods on this site. We do not use an automated booking
-            engine. Availability and pricing are confirmed by the host in response
-            to your enquiry, and a booking is only confirmed once the host
-            acknowledges it.
+            All booking enquiries are made directly through WhatsApp or other contact methods on
+            this site. We do not use an automated booking engine. Availability and pricing are
+            confirmed by the host in response to your enquiry, and a booking is only confirmed once
+            the host acknowledges it.
           </p>
           <h2>Pricing</h2>
           <p>
-            Pricing is shared directly by the host at the time of enquiry and may
-            vary by season, room type and length of stay. The website does not
-            display live pricing.
+            Pricing is shared directly by the host at the time of enquiry and may vary by season,
+            room type and length of stay. The website does not display live pricing.
           </p>
           <h2>Check-in and check-out</h2>
           <ul>
@@ -47,25 +45,22 @@ function TermsPage() {
           </ul>
           <h2>Meals</h2>
           <p>
-            Home-cooked meals are available on request and are prepared in the
-            family kitchen. Please inform us in advance of any allergies or
-            dietary preferences.
+            Home-cooked meals are available on request and are prepared in the family kitchen.
+            Please inform us in advance of any allergies or dietary preferences.
           </p>
           <h2>Conduct</h2>
           <p>
-            Alpine Crest is a family-run homestay in a quiet village. We ask guests
-            to respect the peaceful setting, other guests and the local community.
+            Alpine Crest is a family-run homestay in a quiet village. We ask guests to respect the
+            peaceful setting, other guests and the local community.
           </p>
           <h2>Cancellation</h2>
           <p>
-            Cancellation terms are discussed and agreed directly with the host at
-            the time of booking. Please confirm cancellation terms before your
-            stay.
+            Cancellation terms are discussed and agreed directly with the host at the time of
+            booking. Please confirm cancellation terms before your stay.
           </p>
           <h2>Contact</h2>
           <p>
-            For any questions about these terms, please contact us on WhatsApp at
-            +91 78766 11675.
+            For any questions about these terms, please contact us on WhatsApp at +91 78766 11675.
           </p>
         </div>
       </section>

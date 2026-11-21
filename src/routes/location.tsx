@@ -42,7 +42,9 @@ function LocationPage() {
           Location &amp; Road Access Guide
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Alpine Crest Homestay is situated in <strong>Village Kathot, PO, Majhar Road, Theog (HP 171012)</strong> — a serene apple orchard slope just 200m off National Highway 5 (NH-5).
+          Alpine Crest Homestay is situated in{" "}
+          <strong>Village Kathot, PO, Majhar Road, Theog (HP 171012)</strong> — a serene apple
+          orchard slope just 200m off National Highway 5 (NH-5).
         </p>
       </section>
 
@@ -58,7 +60,9 @@ function LocationPage() {
               <h2 className="font-display text-lg font-bold text-foreground">Google Maps GPS</h2>
             </div>
             <p className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              Exact pinned location on Google Maps. Set your GPS navigation directly to <strong>"Alpine Crest Homestay, Kathot"</strong> for smooth step-by-step turn guidance.
+              Exact pinned location on Google Maps. Set your GPS navigation directly to{" "}
+              <strong>"Alpine Crest Homestay, Kathot"</strong> for smooth step-by-step turn
+              guidance.
             </p>
             <a
               href={SITE.mapsDirections}
@@ -79,7 +83,8 @@ function LocationPage() {
               <h2 className="font-display text-lg font-bold text-foreground">Nearest Landmark</h2>
             </div>
             <p className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              <strong>Kathot Junction & Bus Stop on NH-5</strong> (~200 metres away). Turn onto Majhar Road at Kathot bend. The homestay is clearly visible on the orchard slope.
+              <strong>Kathot Junction & Bus Stop on NH-5</strong> (~200 metres away). Turn onto
+              Majhar Road at Kathot bend. The homestay is clearly visible on the orchard slope.
             </p>
             <div className="mt-4 flex items-center gap-1.5 text-xs text-moss font-semibold">
               <CheckCircle2 className="h-3.5 w-3.5" /> 2 mins off NH-5 highway
@@ -95,7 +100,8 @@ function LocationPage() {
               <h2 className="font-display text-lg font-bold text-foreground">Last Road Stretch</h2>
             </div>
             <p className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              Fully tarred, smooth motorable road right up to the gate. Suitable for all types of vehicles (hatchbacks, sedans &amp; SUVs). No dirt trail or steep unpaved climb.
+              Fully tarred, smooth motorable road right up to the gate. Suitable for all types of
+              vehicles (hatchbacks, sedans &amp; SUVs). No dirt trail or steep unpaved climb.
             </p>
             <div className="mt-4 flex items-center gap-1.5 text-xs text-moss font-semibold">
               <CheckCircle2 className="h-3.5 w-3.5" /> 100% Motorable Paved Road
@@ -108,10 +114,13 @@ function LocationPage() {
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
                 <Car className="h-5 w-5" />
               </div>
-              <h2 className="font-display text-lg font-bold text-foreground">Private On-Site Parking</h2>
+              <h2 className="font-display text-lg font-bold text-foreground">
+                Private On-Site Parking
+              </h2>
             </div>
             <p className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              Spacious, paved, secure private parking space inside the property premises. Free for all staying guests with ample turning room for multiple vehicles.
+              Spacious, paved, secure private parking space inside the property premises. Free for
+              all staying guests with ample turning room for multiple vehicles.
             </p>
             <div className="mt-4 flex items-center gap-1.5 text-xs text-moss font-semibold">
               <CheckCircle2 className="h-3.5 w-3.5" /> Free &amp; Secure Inside Gate
@@ -124,12 +133,18 @@ function LocationPage() {
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
                 <PhoneCall className="h-5 w-5" />
               </div>
-              <h2 className="font-display text-lg font-bold text-foreground">Taxi &amp; Pickup Assistance</h2>
+              <h2 className="font-display text-lg font-bold text-foreground">
+                Taxi &amp; Pickup Assistance
+              </h2>
             </div>
             <p className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              Host Sahil Verma assists with verified local taxi arrangements for pickup from Shimla ISBT, Shimla Railway Station, Kalka, or local sightseeing tours.
+              Host Sahil Verma assists with verified local taxi arrangements for pickup from Shimla
+              ISBT, Shimla Railway Station, Kalka, or local sightseeing tours.
             </p>
-            <WhatsAppLink message={WA.taxi} className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline">
+            <WhatsAppLink
+              message={WA.taxi}
+              className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline"
+            >
               Request Taxi Assistance via WhatsApp →
             </WhatsAppLink>
           </div>
@@ -143,11 +158,15 @@ function LocationPage() {
               <h2 className="font-display text-lg font-bold text-foreground">GPS Coordinates</h2>
             </div>
             <p className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-              <strong>Lat:</strong> {SITE.latitude}, <strong>Long:</strong> {SITE.longitude}<br />
+              <strong>Lat:</strong> {SITE.latitude}, <strong>Long:</strong> {SITE.longitude}
+              <br />
               {SITE.addressFull}
             </p>
             <p className="mt-4 text-xs font-semibold text-foreground">
-              Phone: <a href={`tel:${SITE.phoneRaw}`} className="text-primary hover:underline">{SITE.phoneDisplay}</a>
+              Phone:{" "}
+              <a href={`tel:${SITE.phoneRaw}`} className="text-primary hover:underline">
+                {SITE.phoneDisplay}
+              </a>
             </p>
           </div>
         </div>
@@ -160,7 +179,8 @@ function LocationPage() {
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
                 <h2 className="text-xl font-display text-foreground flex items-center gap-2">
-                  <Navigation className="h-5 w-5 text-moss" /> Single Source of Truth: Verified Road Distances
+                  <Navigation className="h-5 w-5 text-moss" /> Single Source of Truth: Verified Road
+                  Distances
                 </h2>
                 <p className="mt-1 text-xs text-muted-foreground">
                   Official distances calculated from Village Kathot, Majhar Road, Theog gate
@@ -194,7 +214,9 @@ function LocationPage() {
                       <Clock className="h-3.5 w-3.5 text-moss shrink-0" />
                       {item.driveTime}
                     </td>
-                    <td className="px-6 py-4 text-xs text-muted-foreground">{item.routeDescription}</td>
+                    <td className="px-6 py-4 text-xs text-muted-foreground">
+                      {item.routeDescription}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -209,31 +231,44 @@ function LocationPage() {
           <div>
             <h2 className="text-2xl font-display text-foreground">Detailed Travel Instructions</h2>
             <p className="mt-2 text-xs sm:text-sm text-muted-foreground">
-              Follow these clear routes whether arriving by self-drive car, HRTC Volvo bus, or heritage toy train:
+              Follow these clear routes whether arriving by self-drive car, HRTC Volvo bus, or
+              heritage toy train:
             </p>
 
             <ul className="mt-6 grid gap-4 text-xs sm:text-sm leading-relaxed text-muted-foreground">
               <li className="rounded-xl border border-border bg-secondary/30 p-4">
-                <strong className="text-foreground block mb-1">🚗 By Self-Drive / Personal Car:</strong>
-                Take NH-5 east from Shimla towards Theog. Pass Fagu (16 km) and proceed to Kathot junction (~6 km before main Theog town). Turn onto Majhar Road. Alpine Crest Homestay is 200 metres up with secure private parking.
+                <strong className="text-foreground block mb-1">
+                  🚗 By Self-Drive / Personal Car:
+                </strong>
+                Take NH-5 east from Shimla towards Theog. Pass Fagu (16 km) and proceed to Kathot
+                junction (~6 km before main Theog town). Turn onto Majhar Road. Alpine Crest
+                Homestay is 200 metres up with secure private parking.
               </li>
               <li className="rounded-xl border border-border bg-secondary/30 p-4">
                 <strong className="text-foreground block mb-1">🚌 By Bus (HRTC / Private):</strong>
-                Regular buses run from Shimla ISBT towards Theog/Kinnaur. You can request a drop at <strong>Kathot Bus Stop</strong> on NH-5, or alight at Theog Bazaar (~6 km away) and take a 10-min local taxi.
+                Regular buses run from Shimla ISBT towards Theog/Kinnaur. You can request a drop at{" "}
+                <strong>Kathot Bus Stop</strong> on NH-5, or alight at Theog Bazaar (~6 km away) and
+                take a 10-min local taxi.
               </li>
               <li className="rounded-xl border border-border bg-secondary/30 p-4">
                 <strong className="text-foreground block mb-1">🚂 By Heritage Toy Train:</strong>
-                Take the UNESCO toy train from Kalka to Shimla Railway Station. From Shimla station, the homestay is a scenic 1 hr 15 mins drive (~38 km). Host Sahil Verma can arrange direct cab pickup.
+                Take the UNESCO toy train from Kalka to Shimla Railway Station. From Shimla station,
+                the homestay is a scenic 1 hr 15 mins drive (~38 km). Host Sahil Verma can arrange
+                direct cab pickup.
               </li>
               <li className="rounded-xl border border-border bg-secondary/30 p-4">
                 <strong className="text-foreground block mb-1">✈️ By Air:</strong>
-                Jubbarhatti Airport (Shimla) is ~55 km (~1.5 to 2 hrs drive). Chandigarh International Airport is ~150 km (~4.5 hrs drive via Himalayan Expressway).
+                Jubbarhatti Airport (Shimla) is ~55 km (~1.5 to 2 hrs drive). Chandigarh
+                International Airport is ~150 km (~4.5 hrs drive via Himalayan Expressway).
               </li>
             </ul>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 border-t border-border pt-6">
-            <WhatsAppLink message={WA.taxi} className="rounded-full bg-emerald-600 px-6 py-3 text-xs sm:text-sm font-semibold text-white hover:bg-emerald-700 transition-colors shadow-soft">
+            <WhatsAppLink
+              message={WA.taxi}
+              className="rounded-full bg-emerald-600 px-6 py-3 text-xs sm:text-sm font-semibold text-white hover:bg-emerald-700 transition-colors shadow-soft"
+            >
               Request Taxi Pickup from Host
             </WhatsAppLink>
             <a
@@ -260,7 +295,8 @@ function LocationPage() {
             {VERIFIED_DISTANCES.map((item) => (
               <Link
                 key={item.slug}
-                to={`/places-to-visit/${item.slug}`}
+                to="/places-to-visit/$slug"
+                params={{ slug: item.slug }}
                 className="rounded-2xl border border-border bg-card p-6 shadow-soft transition-all hover:-translate-y-1 hover:shadow-lift"
               >
                 <div className="flex items-center justify-between">

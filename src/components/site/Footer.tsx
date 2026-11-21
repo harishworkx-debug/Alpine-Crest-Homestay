@@ -49,8 +49,8 @@ export function Footer() {
         <div>
           <h2 className="font-display text-2xl">Alpine Crest Homestay</h2>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            Peaceful mountain stay near Theog, Himachal Pradesh — mountain views,
-            private balconies and home-cooked Himachali food.
+            Peaceful mountain stay near Theog, Himachal Pradesh — mountain views, private balconies
+            and home-cooked Himachali food.
           </p>
           <WhatsAppLink message={WA.general} className="mt-5">
             Enquire on WhatsApp

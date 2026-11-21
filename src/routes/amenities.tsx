@@ -30,7 +30,9 @@ function AmenitiesPage() {
           Everything You Need for a Comfortable Mountain Stay
         </p>
         <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          The experience at Alpine Crest Homestay is about practical comfort and peaceful mountain living. These are the genuine facilities we offer at our home in Village Kathot near Theog.
+          The experience at Alpine Crest Homestay is about practical comfort and peaceful mountain
+          living. These are the genuine facilities we offer at our home in Village Kathot near
+          Theog.
         </p>
       </section>
 
@@ -43,9 +45,7 @@ function AmenitiesPage() {
           >
             <AmenityIcon name={a.icon} className="h-7 w-7 text-moss" />
             <h2 className="mt-4 text-xl font-display text-foreground">{a.label}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              {a.description}
-            </p>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{a.description}</p>
           </div>
         ))}
       </section>
@@ -54,9 +54,15 @@ function AmenitiesPage() {
       <section className="container-page grid gap-10 py-16 lg:grid-cols-2 lg:items-center border-t border-border">
         <div>
           <span className="eyebrow">Stay Close to Nature</span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-display">A Quiet Alternative to Commercial Hotels</h2>
+          <h2 className="mt-3 text-3xl sm:text-4xl font-display">
+            A Quiet Alternative to Commercial Hotels
+          </h2>
           <p className="mt-5 leading-relaxed text-muted-foreground">
-            Alpine Crest Homestay sits above the apple orchards of Village Kathot, a short distance from Theog town. Days here are unhurried — morning tea on the sunrise balcony, walks through the orchard, fresh home-cooked meals, and quiet evenings where you hear only the wind in the deodars. It is a peaceful contrast to crowded hotel hubs in Shimla or central Kufri.
+            Alpine Crest Homestay sits above the apple orchards of Village Kathot, a short distance
+            from Theog town. Days here are unhurried — morning tea on the sunrise balcony, walks
+            through the orchard, fresh home-cooked meals, and quiet evenings where you hear only the
+            wind in the deodars. It is a peaceful contrast to crowded hotel hubs in Shimla or
+            central Kufri.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <WhatsAppLink message={WA.general}>Check Room Availability</WhatsAppLink>
@@ -71,10 +77,22 @@ function AmenitiesPage() {
 
         <div className="grid gap-4 sm:grid-cols-2">
           {[
-            { t: "Mountain Vistas", s: "180° panoramic views of Shali Tibba peaks and deodar valley." },
-            { t: "Pine Forest Surroundings", s: "Fresh high-altitude air and quiet natural walking trails." },
-            { t: "Peaceful Atmosphere", s: "Zero highway traffic noise — serene village environment." },
-            { t: "Host Guidance", s: "Personalized travel advice and local assistance from host Sahil." },
+            {
+              t: "Mountain Vistas",
+              s: "180° panoramic views of Shali Tibba peaks and deodar valley.",
+            },
+            {
+              t: "Pine Forest Surroundings",
+              s: "Fresh high-altitude air and quiet natural walking trails.",
+            },
+            {
+              t: "Peaceful Atmosphere",
+              s: "Zero highway traffic noise — serene village environment.",
+            },
+            {
+              t: "Host Guidance",
+              s: "Personalized travel advice and local assistance from host Sahil.",
+            },
           ].map((item) => (
             <div key={item.t} className="rounded-xl border border-border bg-card p-5 shadow-soft">
               <h3 className="text-lg font-display text-foreground">{item.t}</h3>

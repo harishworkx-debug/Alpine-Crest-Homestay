@@ -20,9 +20,17 @@ export const Route = createFileRoute("/places-to-visit/$slug")({
         { property: "og:title", content: `${d.name} Travel Guide | Alpine Crest Homestay` },
         { property: "og:description", content: d.intro.slice(0, 150) },
         { property: "og:type", content: "article" },
-        { property: "og:url", content: `https://www.alpinecresthomestay.com/places-to-visit/${d.slug}/` },
+        {
+          property: "og:url",
+          content: `https://www.alpinecresthomestay.com/places-to-visit/${d.slug}/`,
+        },
       ],
-      links: [{ rel: "canonical", href: `https://www.alpinecresthomestay.com/places-to-visit/${d.slug}/` }],
+      links: [
+        {
+          rel: "canonical",
+          href: `https://www.alpinecresthomestay.com/places-to-visit/${d.slug}/`,
+        },
+      ],
       scripts: [
         breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -45,10 +53,7 @@ function DestinationPage() {
   return (
     <>
       <Breadcrumbs
-        items={[
-          { name: "Places to Visit", path: "/places-to-visit" },
-          { name: dest.name },
-        ]}
+        items={[{ name: "Places to Visit", path: "/places-to-visit" }, { name: dest.name }]}
       />
 
       <section className="container-page py-10">
@@ -96,7 +101,8 @@ function DestinationPage() {
           <div className="rounded-2xl border border-border bg-card p-6 shadow-soft">
             <h2 className="text-xl font-display">Book Your Mountain Stay</h2>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Alpine Crest Homestay in Village Kathot near Theog makes a peaceful and convenient base for visiting {dest.name}.
+              Alpine Crest Homestay in Village Kathot near Theog makes a peaceful and convenient
+              base for visiting {dest.name}.
             </p>
             <WhatsAppLink message={WA.location} className="mt-5 w-full justify-center">
               Check Availability on WhatsApp
@@ -119,22 +125,34 @@ function DestinationPage() {
             <h2 className="text-xl font-display">Booking &amp; Travel Links</h2>
             <ul className="mt-4 grid gap-2.5 text-xs font-medium">
               <li>
-                <Link to="/homestay-in-theog" className="text-moss hover:underline flex items-center gap-1.5">
+                <Link
+                  to="/homestay-in-theog"
+                  className="text-moss hover:underline flex items-center gap-1.5"
+                >
                   <MapPin className="h-3.5 w-3.5" /> Homestay in Theog (Main Page)
                 </Link>
               </li>
               <li>
-                <Link to="/homestay-near-kufri" className="text-moss hover:underline flex items-center gap-1.5">
+                <Link
+                  to="/homestay-near-kufri"
+                  className="text-moss hover:underline flex items-center gap-1.5"
+                >
                   <MapPin className="h-3.5 w-3.5" /> Homestay Near Kufri (22 km)
                 </Link>
               </li>
               <li>
-                <Link to="/homestay-near-shimla" className="text-moss hover:underline flex items-center gap-1.5">
+                <Link
+                  to="/homestay-near-shimla"
+                  className="text-moss hover:underline flex items-center gap-1.5"
+                >
                   <MapPin className="h-3.5 w-3.5" /> Homestay Near Shimla (38 km)
                 </Link>
               </li>
               <li>
-                <Link to="/location" className="text-moss hover:underline flex items-center gap-1.5">
+                <Link
+                  to="/location"
+                  className="text-moss hover:underline flex items-center gap-1.5"
+                >
                   <MapPin className="h-3.5 w-3.5" /> Verified Distance &amp; Directions
                 </Link>
               </li>
@@ -147,7 +165,8 @@ function DestinationPage() {
               {others.map((o) => (
                 <li key={o.slug}>
                   <Link
-                    to={`/places-to-visit/${o.slug}`}
+                    to="/places-to-visit/$slug"
+                    params={{ slug: o.slug }}
                     className="flex items-center gap-2 text-sm text-muted-foreground hover:text-pine"
                   >
                     <MapPin className="h-4 w-4 shrink-0 text-moss" aria-hidden="true" />
@@ -166,7 +185,8 @@ function DestinationPage() {
         <div className="container-page flex flex-col items-center gap-5 text-center">
           <h2 className="text-3xl font-display">Make {dest.name} part of your stay</h2>
           <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
-            Send a WhatsApp message and we will help with room availability, pricing and taxi arrangements for your trip to {dest.name}.
+            Send a WhatsApp message and we will help with room availability, pricing and taxi
+            arrangements for your trip to {dest.name}.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <WhatsAppLink message={WA.location}>Check Availability via WhatsApp</WhatsAppLink>

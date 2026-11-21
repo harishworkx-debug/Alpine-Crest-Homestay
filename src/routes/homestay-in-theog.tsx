@@ -51,9 +51,8 @@ function HomestayAtTheogPage() {
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
             If you are searching for a peaceful homestay in Theog, Himachal Pradesh, Alpine Crest
-          Homestay is located in Kathot near Theog and offers a comfortable mountain stay
-          with beautiful surroundings, local hospitality and convenient access to
-          Kufri and Shimla.
+            Homestay is located in Kathot near Theog and offers a comfortable mountain stay with
+            beautiful surroundings, local hospitality and convenient access to Kufri and Shimla.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <WhatsAppLink message={WA.location}>Check Availability on WhatsApp</WhatsAppLink>
@@ -83,19 +82,18 @@ function HomestayAtTheogPage() {
           <div className="prose-stay">
             <h2>A Peaceful Homestay in Kathot Near Theog</h2>
             <p>
-              Theog is a small hill town on NH-5, about an hour east of Shimla. Most
-              travellers pass through it on the way to Kufri or Narkanda, but the
-              ridge around Theog — and villages like Kathot just off the highway —
-              holds some of the quietest mountain views in the upper Shimla hills.
-              Alpine Crest Homestay sits above the apple orchards of Kathot, where
-              the road leaves the highway traffic behind and the only sounds are
-              wind through the deodars and distant temple bells.
+              Theog is a small hill town on NH-5, about an hour east of Shimla. Most travellers pass
+              through it on the way to Kufri or Narkanda, but the ridge around Theog — and villages
+              like Kathot just off the highway — holds some of the quietest mountain views in the
+              upper Shimla hills. Alpine Crest Homestay sits above the apple orchards of Kathot,
+              where the road leaves the highway traffic behind and the only sounds are wind through
+              the deodars and distant temple bells.
             </p>
             <p>
-              As a homestay near Theog, we keep things simple and personal. The
-              house is run by the family that lives here, so you get genuine local
-              hospitality — directions to the best sunrise spot, a cup of chai when
-              you arrive, and a kitchen that cooks what is in season.
+              As a homestay near Theog, we keep things simple and personal. The house is run by the
+              family that lives here, so you get genuine local hospitality — directions to the best
+              sunrise spot, a cup of chai when you arrive, and a kitchen that cooks what is in
+              season.
             </p>
 
             <h2>Why Choose Alpine Crest Homestay Near Theog?</h2>
@@ -111,46 +109,50 @@ function HomestayAtTheogPage() {
 
             <h2>Rooms &amp; Accommodation</h2>
             <p>
-              The homestay has two room types. The Standard Room has a comfortable
-              double bed and an attached bathroom with round-the-clock hot water —
-              practical and warm for couples and solo travellers. The Deluxe Room
-              adds a private balcony that opens straight onto the deodar ridgeline,
-              with a seating area to take in the view. Both rooms are clean, simple
-              and wood-warmed, and share access to the lounge, terrace and garden.
+              The homestay has two room types. The Standard Room has a comfortable double bed and an
+              attached bathroom with round-the-clock hot water — practical and warm for couples and
+              solo travellers. The Deluxe Room adds a private balcony that opens straight onto the
+              deodar ridgeline, with a seating area to take in the view. Both rooms are clean,
+              simple and wood-warmed, and share access to the lounge, terrace and garden.
             </p>
 
             <h2>Mountain Views and Pine Valley Surroundings</h2>
             <p>
-              The property looks east over a wide valley of pine and deodar, with
-              the Shali Tibba range rising beyond. Because the balconies face east,
-              mornings begin with sunrise light spilling over the ridgeline, and
-              the afternoons stay bright while the valley slowly fills with shadow.
-              A short walk down through the orchards takes you to the edge of the
-              pine forest, where the air is noticeably cooler and the silence is
-              total.
+              The property looks east over a wide valley of pine and deodar, with the Shali Tibba
+              range rising beyond. Because the balconies face east, mornings begin with sunrise
+              light spilling over the ridgeline, and the afternoons stay bright while the valley
+              slowly fills with shadow. A short walk down through the orchards takes you to the edge
+              of the pine forest, where the air is noticeably cooler and the silence is total.
             </p>
 
             <h2>Home-Cooked Himachali Food</h2>
             <p>
-              Meals are cooked in the family kitchen and served in the lounge or on
-              the terrace. Breakfast is parathas, eggs and chai. Lunch and dinner
-              are simple home food — rajma, dal, seasonal sabzi, rice and rotis —
-              with Himachali specialties like siddu (steamed bread) and madra
-              (chickpeas in yoghurt gravy) available on request. Food is vegetarian
-              by default, and we happily cook around allergies and preferences when
-              you tell us in advance.
+              Meals are cooked in the family kitchen and served in the lounge or on the terrace.
+              Breakfast is parathas, eggs and chai. Lunch and dinner are simple home food — rajma,
+              dal, seasonal sabzi, rice and rotis — with Himachali specialties like siddu (steamed
+              bread) and madra (chickpeas in yoghurt gravy) available on request. Food is vegetarian
+              by default, and we happily cook around allergies and preferences when you tell us in
+              advance.
             </p>
 
             <h2>Places to Visit Near Theog</h2>
             <p>
               Theog is well placed as a base for the upper Shimla hills.{" "}
-              <Link to="/homestay-near-kufri" className="text-moss underline underline-offset-4">Kufri</Link>{" "}
-              is about 30 minutes away for the Himalayan Nature Park and winter snow;
-              Fagu is a short drive for quiet viewpoints;{" "}
-              <Link to="/mountain-view-homestay-theog" className="text-moss underline underline-offset-4">Narkanda</Link>,
-              further along NH-5, offers Hatu Peak and the apple belt of Kotgarh;
-              and{" "}
-              <Link to="/homestay-near-shimla" className="text-moss underline underline-offset-4">Shimla</Link>{" "}
+              <Link to="/homestay-near-kufri" className="text-moss underline underline-offset-4">
+                Kufri
+              </Link>{" "}
+              is about 30 minutes away for the Himalayan Nature Park and winter snow; Fagu is a
+              short drive for quiet viewpoints;{" "}
+              <Link
+                to="/mountain-view-homestay-theog"
+                className="text-moss underline underline-offset-4"
+              >
+                Narkanda
+              </Link>
+              , further along NH-5, offers Hatu Peak and the apple belt of Kotgarh; and{" "}
+              <Link to="/homestay-near-shimla" className="text-moss underline underline-offset-4">
+                Shimla
+              </Link>{" "}
               town is an hour west if you want a day trip to the Ridge and Mall Road.
             </p>
           </div>
@@ -265,8 +267,8 @@ function HomestayAtTheogPage() {
         <div className="rounded-2xl bg-primary px-8 py-12 text-center text-primary-foreground">
           <h2 className="text-3xl">Book Your Homestay Near Theog</h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-sand/85">
-            Send us a WhatsApp message with your travel dates and we will get back
-            to you with availability, pricing and taxi help for reaching Theog.
+            Send us a WhatsApp message with your travel dates and we will get back to you with
+            availability, pricing and taxi help for reaching Theog.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <WhatsAppLink message={WA.location} variant="primary">

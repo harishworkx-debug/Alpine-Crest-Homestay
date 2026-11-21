@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  type ErrorComponentProps,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
@@ -20,11 +21,10 @@ function NotFoundComponent() {
   return (
     <div className="flex min-h-[70vh] flex-col items-center justify-center bg-background px-4 py-20 text-center">
       <div className="max-w-xl">
-        <h1 className="font-display text-5xl sm:text-6xl text-pine mb-4">
-          Lost in the Mountains?
-        </h1>
+        <h1 className="font-display text-5xl sm:text-6xl text-pine mb-4">Lost in the Mountains?</h1>
         <p className="text-lg text-muted-foreground mb-10">
-          The page you're looking for seems to have wandered off the trail. Let's get you back to Alpine Crest Homestay.
+          The page you're looking for seems to have wandered off the trail. Let's get you back to
+          Alpine Crest Homestay.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Link
@@ -51,7 +51,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {

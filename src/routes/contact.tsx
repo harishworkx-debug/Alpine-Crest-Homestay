@@ -1,5 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MapPin, Phone, Navigation, MessageCircle, ShieldCheck, Clock, CheckCircle2, UserCheck } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Navigation,
+  MessageCircle,
+  ShieldCheck,
+  Clock,
+  CheckCircle2,
+  UserCheck,
+} from "lucide-react";
 import { pageMeta, SITE, WA } from "@/lib/site";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { WhatsAppLink } from "@/components/site/WhatsAppLink";
@@ -31,7 +40,9 @@ function ContactPage() {
           Check Availability &amp; Reserve Your Stay
         </h1>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Book directly with host <strong>Sahil Verma</strong> for guaranteed lowest rates, zero booking fees, and personal assistance. Select your dates below to send a pre-filled enquiry straight to our WhatsApp.
+          Book directly with host <strong>Sahil Verma</strong> for guaranteed lowest rates, zero
+          booking fees, and personal assistance. Select your dates below to send a pre-filled
+          enquiry straight to our WhatsApp.
         </p>
       </section>
 
@@ -45,7 +56,9 @@ function ContactPage() {
         <div className="rounded-2xl border border-border bg-card p-6 sm:p-8 shadow-soft">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border pb-5 mb-6">
             <div>
-              <h2 className="text-xl sm:text-2xl font-display text-foreground">Specific WhatsApp Enquiries</h2>
+              <h2 className="text-xl sm:text-2xl font-display text-foreground">
+                Specific WhatsApp Enquiries
+              </h2>
               <p className="mt-1 text-xs sm:text-sm text-muted-foreground">
                 Click any options below to open a tailored WhatsApp chat for immediate answers:
               </p>
@@ -61,7 +74,9 @@ function ContactPage() {
                 <span className="text-[10px] font-bold uppercase tracking-wider text-moss bg-moss/10 px-2 py-0.5 rounded">
                   General Stay
                 </span>
-                <h3 className="mt-2 text-sm font-bold text-foreground">General Room Availability</h3>
+                <h3 className="mt-2 text-sm font-bold text-foreground">
+                  General Room Availability
+                </h3>
                 <p className="mt-1 text-xs text-muted-foreground">
                   Check dates and total room capacity across all 6 double rooms.
                 </p>
@@ -123,7 +138,8 @@ function ContactPage() {
                 </span>
                 <h3 className="mt-2 text-sm font-bold text-foreground">Taxi &amp; Sightseeing</h3>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  Arrange station pickup from Shimla ISBT or local day tours to Kufri &amp; Narkanda.
+                  Arrange station pickup from Shimla ISBT or local day tours to Kufri &amp;
+                  Narkanda.
                 </p>
               </div>
               <WhatsAppLink message={WA.taxi} className="mt-4 w-full justify-center text-xs">
@@ -164,7 +180,9 @@ function ContactPage() {
             <div className="flex items-center gap-2 text-moss font-semibold text-xs uppercase tracking-wider">
               <UserCheck className="h-4 w-4" /> Family-Run Property
             </div>
-            <h2 className="mt-2 text-2xl font-display text-foreground">Alpine Crest Homestay Location</h2>
+            <h2 className="mt-2 text-2xl font-display text-foreground">
+              Alpine Crest Homestay Location
+            </h2>
             <p className="mt-4 flex items-start gap-2.5 text-sm leading-relaxed text-muted-foreground">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-moss" aria-hidden="true" />
               <span>{SITE.addressFull}</span>
@@ -172,19 +190,25 @@ function ContactPage() {
             <p className="mt-3 flex items-center gap-2.5 text-sm text-muted-foreground">
               <Phone className="h-4 w-4 shrink-0 text-moss" aria-hidden="true" />
               <span>Host Contact: </span>
-              <a href={`tel:${SITE.phoneRaw}`} className="font-semibold text-foreground hover:text-primary">
+              <a
+                href={`tel:${SITE.phoneRaw}`}
+                className="font-semibold text-foreground hover:text-primary"
+              >
                 {SITE.phoneDisplay}
               </a>
             </p>
             <div className="mt-6 space-y-2 text-xs text-muted-foreground border-t border-border pt-4">
               <p className="flex items-center gap-2">
-                <CheckCircle2 className="h-3.5 w-3.5 text-moss" /> Check-in: 12:00 PM | Check-out: 11:00 AM
+                <CheckCircle2 className="h-3.5 w-3.5 text-moss" /> Check-in: 12:00 PM | Check-out:
+                11:00 AM
               </p>
               <p className="flex items-center gap-2">
-                <CheckCircle2 className="h-3.5 w-3.5 text-moss" /> Nearest Highway: NH-5 (200m away at Kathot Junction)
+                <CheckCircle2 className="h-3.5 w-3.5 text-moss" /> Nearest Highway: NH-5 (200m away
+                at Kathot Junction)
               </p>
               <p className="flex items-center gap-2">
-                <CheckCircle2 className="h-3.5 w-3.5 text-moss" /> Free Private Parking inside property gates
+                <CheckCircle2 className="h-3.5 w-3.5 text-moss" /> Free Private Parking inside
+                property gates
               </p>
             </div>
           </div>

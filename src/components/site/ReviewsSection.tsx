@@ -8,9 +8,8 @@ export function ReviewsSection() {
 
   const filterOptions = ["All", "Family", "Couple", "Friends", "Solo"];
 
-  const filteredReviews = filter === "All"
-    ? REAL_REVIEWS
-    : REAL_REVIEWS.filter((r) => r.travelGroup === filter);
+  const filteredReviews =
+    filter === "All" ? REAL_REVIEWS : REAL_REVIEWS.filter((r) => r.travelGroup === filter);
 
   return (
     <section className="py-20 bg-secondary/40 border-y border-border" id="reviews">
@@ -25,7 +24,8 @@ export function ReviewsSection() {
               What Guests Say About Their Stay
             </h2>
             <p className="mt-4 text-base text-muted-foreground leading-relaxed">
-              Read authentic experiences shared by travelers who stayed at Alpine Crest Homestay in Kathot near Theog & Kufri.
+              Read authentic experiences shared by travelers who stayed at Alpine Crest Homestay in
+              Kathot near Theog & Kufri.
             </p>
           </div>
         </Reveal>
@@ -45,7 +45,9 @@ export function ReviewsSection() {
               <p className="mt-1 text-sm font-semibold text-foreground">
                 5.0 out of 5 stars based on 20 Verified Google Reviews
               </p>
-              <p className="text-xs text-muted-foreground">100% Positive Guest Feedback on Google Maps</p>
+              <p className="text-xs text-muted-foreground">
+                100% Positive Guest Feedback on Google Maps
+              </p>
             </div>
           </div>
 

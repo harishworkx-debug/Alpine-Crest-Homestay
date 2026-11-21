@@ -1,5 +1,17 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Check, MapPin, Mountain, Car, Wifi, UtensilsCrossed, Sunrise, ShieldCheck, Navigation, Clock, Tag } from "lucide-react";
+import {
+  Check,
+  MapPin,
+  Mountain,
+  Car,
+  Wifi,
+  UtensilsCrossed,
+  Sunrise,
+  ShieldCheck,
+  Navigation,
+  Clock,
+  Tag,
+} from "lucide-react";
 import { WA, breadcrumbSchema } from "@/lib/site";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { WhatsAppLink } from "@/components/site/WhatsAppLink";
@@ -18,7 +30,10 @@ export const Route = createFileRoute("/homestay-near-shimla")({
         content:
           "Looking for a peaceful homestay near Shimla? Alpine Crest Homestay in Kathot near Theog is 38 km (1 hr 15 mins) from Shimla Mall Road. Mountain views, private balconies, free parking & home-cooked meals.",
       },
-      { property: "og:title", content: "Peaceful Homestay Near Shimla (38 km) | Mountain View Stay" },
+      {
+        property: "og:title",
+        content: "Peaceful Homestay Near Shimla (38 km) | Mountain View Stay",
+      },
       {
         property: "og:description",
         content:
@@ -27,7 +42,9 @@ export const Route = createFileRoute("/homestay-near-shimla")({
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://www.alpinecresthomestay.com/homestay-near-shimla/" },
     ],
-    links: [{ rel: "canonical", href: "https://www.alpinecresthomestay.com/homestay-near-shimla/" }],
+    links: [
+      { rel: "canonical", href: "https://www.alpinecresthomestay.com/homestay-near-shimla/" },
+    ],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },
@@ -52,7 +69,9 @@ function HomestayAtShimlaPage() {
             Mountain View Homestay Near Shimla (38 km / 1 Hr 15 Mins Drive)
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            Looking for a peaceful mountain homestay near Shimla away from crowded town traffic? <strong>Alpine Crest Homestay</strong> is located in Village Kathot, near Theog — exactly <strong>38 km (approx 1 hr 15 mins drive)</strong> east of Shimla on NH-5.
+            Looking for a peaceful mountain homestay near Shimla away from crowded town traffic?{" "}
+            <strong>Alpine Crest Homestay</strong> is located in Village Kathot, near Theog —
+            exactly <strong>38 km (approx 1 hr 15 mins drive)</strong> east of Shimla on NH-5.
           </p>
 
           {/* Fact Pills */}
@@ -105,30 +124,60 @@ function HomestayAtShimlaPage() {
           <div className="prose-stay">
             <h2>A Peaceful Homestay Near Shimla (Village Kathot, Theog)</h2>
             <p>
-              Shimla is the iconic capital of Himachal Pradesh, famous for its colonial-era Mall Road, the Ridge, and the UNESCO heritage toy train. While Shimla is wonderful for a daytime excursion, staying in the town center often means heavy traffic jams, expensive paid parking, crowded hotel alleys, and commercial noise.
+              Shimla is the iconic capital of Himachal Pradesh, famous for its colonial-era Mall
+              Road, the Ridge, and the UNESCO heritage toy train. While Shimla is wonderful for a
+              daytime excursion, staying in the town center often means heavy traffic jams,
+              expensive paid parking, crowded hotel alleys, and commercial noise.
             </p>
             <p>
-              Alpine Crest Homestay offers an ideal peaceful alternative. Situated in <strong>Village Kathot near Theog (38 km from Shimla)</strong> along NH-5, our family-run homestay lets you explore Shimla during the day, then escape to pure mountain air, quiet apple orchards, and wide sunrise valley views in the evening.
+              Alpine Crest Homestay offers an ideal peaceful alternative. Situated in{" "}
+              <strong>Village Kathot near Theog (38 km from Shimla)</strong> along NH-5, our
+              family-run homestay lets you explore Shimla during the day, then escape to pure
+              mountain air, quiet apple orchards, and wide sunrise valley views in the evening.
             </p>
 
             <h2>Why Choose a Homestay Near Shimla Instead of City Centre?</h2>
             <ul>
-              <li><strong>Zero City Crowds:</strong> Quiet, peaceful orchard setting with crisp mountain air and deodar forest paths.</li>
-              <li><strong>Sunrise Valley Balconies:</strong> East-facing private balconies overlooking Shali Tibba range.</li>
-              <li><strong>Free On-Site Private Parking:</strong> Secure parking right inside property gates (unlike congested Shimla paid lots).</li>
-              <li><strong>Authentic Himachali Food:</strong> Freshly prepared home meals (Siddu, Rajma, Madra) served in the family lounge.</li>
-              <li><strong>Easy NH-5 Access:</strong> 1 hour 15 mins drive to Shimla; 35 mins drive to Kufri; 1 hr 20 mins to Narkanda.</li>
-              <li><strong>Direct Cab Assistance:</strong> Host Sahil Verma arranges verified local drivers for Shimla ISBT &amp; station pickup.</li>
+              <li>
+                <strong>Zero City Crowds:</strong> Quiet, peaceful orchard setting with crisp
+                mountain air and deodar forest paths.
+              </li>
+              <li>
+                <strong>Sunrise Valley Balconies:</strong> East-facing private balconies overlooking
+                Shali Tibba range.
+              </li>
+              <li>
+                <strong>Free On-Site Private Parking:</strong> Secure parking right inside property
+                gates (unlike congested Shimla paid lots).
+              </li>
+              <li>
+                <strong>Authentic Himachali Food:</strong> Freshly prepared home meals (Siddu,
+                Rajma, Madra) served in the family lounge.
+              </li>
+              <li>
+                <strong>Easy NH-5 Access:</strong> 1 hour 15 mins drive to Shimla; 35 mins drive to
+                Kufri; 1 hr 20 mins to Narkanda.
+              </li>
+              <li>
+                <strong>Direct Cab Assistance:</strong> Host Sahil Verma arranges verified local
+                drivers for Shimla ISBT &amp; station pickup.
+              </li>
             </ul>
 
             <h2>Rooms &amp; Balcony Views</h2>
             <p>
-              Choose between our <strong>Standard Room (₹2,300/night)</strong> for a cozy wood-warmed stay with attached washroom, or our <strong>Deluxe Room (₹2,800/night)</strong> featuring full pine panelling and a private sunrise balcony overlooking the valley. Both room rates include home-cooked breakfast and dinner for two!
+              Choose between our <strong>Standard Room (₹2,300/night)</strong> for a cozy
+              wood-warmed stay with attached washroom, or our{" "}
+              <strong>Deluxe Room (₹2,800/night)</strong> featuring full pine panelling and a
+              private sunrise balcony overlooking the valley. Both room rates include home-cooked
+              breakfast and dinner for two!
             </p>
 
             <h2>Travel Distance &amp; How to Reach From Shimla</h2>
             <p>
-              Drive 38 km east on NH-5 from Shimla past Fagu (16 km) towards Theog. At Kathot junction, take Majhar Road for 200 metres. Regular state buses also run from Shimla ISBT to Theog bazaar, where a short 10-minute taxi brings you right to our door.
+              Drive 38 km east on NH-5 from Shimla past Fagu (16 km) towards Theog. At Kathot
+              junction, take Majhar Road for 200 metres. Regular state buses also run from Shimla
+              ISBT to Theog bazaar, where a short 10-minute taxi brings you right to our door.
             </p>
           </div>
         </Reveal>
@@ -150,9 +199,14 @@ function HomestayAtShimlaPage() {
                   <span className="text-sm font-bold text-moss">₹2,800 / night</span>
                 </div>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Private sunrise balcony, sit-out nook, full pine panelling. Includes breakfast &amp; dinner.
+                  Private sunrise balcony, sit-out nook, full pine panelling. Includes breakfast
+                  &amp; dinner.
                 </p>
-                <WhatsAppLink message={WA.deluxe} variant="primary" className="mt-4 px-5 py-2.5 w-full justify-center">
+                <WhatsAppLink
+                  message={WA.deluxe}
+                  variant="primary"
+                  className="mt-4 px-5 py-2.5 w-full justify-center"
+                >
                   Enquire Deluxe Room
                 </WhatsAppLink>
               </div>
@@ -175,9 +229,14 @@ function HomestayAtShimlaPage() {
                   <span className="text-sm font-bold text-moss">₹2,300 / night</span>
                 </div>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Comfortable double bed, attached modern washroom, hot water. Includes breakfast &amp; dinner.
+                  Comfortable double bed, attached modern washroom, hot water. Includes breakfast
+                  &amp; dinner.
                 </p>
-                <WhatsAppLink message={WA.standard} variant="primary" className="mt-4 px-5 py-2.5 w-full justify-center">
+                <WhatsAppLink
+                  message={WA.standard}
+                  variant="primary"
+                  className="mt-4 px-5 py-2.5 w-full justify-center"
+                >
                   Enquire Standard Room
                 </WhatsAppLink>
               </div>
@@ -190,7 +249,10 @@ function HomestayAtShimlaPage() {
       <section className="bg-secondary/60 py-16">
         <div className="container-page">
           <Reveal>
-            <SectionHeading eyebrow="Explore from here" title="Day Trips Around Kathot &amp; Theog" />
+            <SectionHeading
+              eyebrow="Explore from here"
+              title="Day Trips Around Kathot &amp; Theog"
+            />
           </Reveal>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
@@ -218,7 +280,8 @@ function HomestayAtShimlaPage() {
         <div className="rounded-2xl bg-primary px-8 py-12 text-center text-primary-foreground">
           <h2 className="text-3xl font-display">Book Your Peaceful Stay Near Shimla Today</h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-sand/85">
-            Book direct with host Sahil Verma for verified low-rate guarantee, zero booking fees, and custom taxi pickup from Shimla.
+            Book direct with host Sahil Verma for verified low-rate guarantee, zero booking fees,
+            and custom taxi pickup from Shimla.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <WhatsAppLink message={WA.location} variant="primary">

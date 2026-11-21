@@ -1,9 +1,37 @@
 import {
-  exterior, entrance, night, bonFair,
-  standardRoom, deluxeRoom, deluxeBalcony, rooms1, rooms2, rooms3, rooms3_2, rooms4, rooms5, bathroom, roomsBathroom,
-  lounge, looby, looby3, sittingArea, sittingArea2, dining, diningArea, fitness,
-  snowView, snowView2, sunset, sunset2, views, views2,
-  food, food2, foodWithMountain, rooms as roomsImage
+  exterior,
+  entrance,
+  night,
+  bonFair,
+  standardRoom,
+  deluxeRoom,
+  deluxeBalcony,
+  rooms1,
+  rooms2,
+  rooms3,
+  rooms3_2,
+  rooms4,
+  rooms5,
+  bathroom,
+  roomsBathroom,
+  lounge,
+  looby,
+  looby3,
+  sittingArea,
+  sittingArea2,
+  dining,
+  diningArea,
+  fitness,
+  snowView,
+  snowView2,
+  sunset,
+  sunset2,
+  views,
+  views2,
+  food,
+  food2,
+  foodWithMountain,
+  rooms as roomsImage,
 } from "@/lib/images";
 
 import { blogExtraArticles } from "@/lib/blog-extra";
@@ -294,7 +322,16 @@ export type GalleryImage = {
   src: string;
   alt: string;
   caption: string;
-  category: "Property" | "Rooms" | "Balcony Views" | "Snow Views" | "Sunrise" | "Food" | "Bathroom" | "Parking" | "Surroundings";
+  category:
+    | "Property"
+    | "Rooms"
+    | "Balcony Views"
+    | "Snow Views"
+    | "Sunrise"
+    | "Food"
+    | "Bathroom"
+    | "Parking"
+    | "Surroundings";
 };
 
 export const galleryImages: GalleryImage[] = [
@@ -460,11 +497,39 @@ export const amenitiesList: Amenity[] = [
   { icon: "Wifi", label: "Free Wi-Fi", description: "Stay connected across the property." },
   { icon: "Car", label: "Private Parking", description: "Secure parking right at the house." },
   { icon: "Zap", label: "Power Backup", description: "Backup for uninterrupted comfort." },
-  { icon: "Sun", label: "Private Balcony", description: "East-facing balconies with valley views." },
-  { icon: "Trees", label: "Terrace & Garden", description: "Open terrace and orchard garden to relax in." },
-  { icon: "UtensilsCrossed", label: "Home-Cooked Food", description: "Himachali meals on request from the family kitchen." },
-  { icon: "Mountain", label: "Mountain Views", description: "Panoramic views of the surrounding ranges." },
-  { icon: "Leaf", label: "Peaceful Location", description: "A quiet setting away from tourist crowds." },
-  { icon: "Dumbbell", label: "Fitness Corner", description: "A small space to keep up your routine." },
-  { icon: "ShowerHead", label: "Hot Water 24×7", description: "Round-the-clock hot water in all rooms." },
+  {
+    icon: "Sun",
+    label: "Private Balcony",
+    description: "East-facing balconies with valley views.",
+  },
+  {
+    icon: "Trees",
+    label: "Terrace & Garden",
+    description: "Open terrace and orchard garden to relax in.",
+  },
+  {
+    icon: "UtensilsCrossed",
+    label: "Home-Cooked Food",
+    description: "Himachali meals on request from the family kitchen.",
+  },
+  {
+    icon: "Mountain",
+    label: "Mountain Views",
+    description: "Panoramic views of the surrounding ranges.",
+  },
+  {
+    icon: "Leaf",
+    label: "Peaceful Location",
+    description: "A quiet setting away from tourist crowds.",
+  },
+  {
+    icon: "Dumbbell",
+    label: "Fitness Corner",
+    description: "A small space to keep up your routine.",
+  },
+  {
+    icon: "ShowerHead",
+    label: "Hot Water 24×7",
+    description: "Round-the-clock hot water in all rooms.",
+  },
 ];

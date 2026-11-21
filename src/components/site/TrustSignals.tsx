@@ -1,4 +1,12 @@
-import { Star, ShieldCheck, CreditCard, Clock, MapPin, CheckCircle, HeartHandshake } from "lucide-react";
+import {
+  Star,
+  ShieldCheck,
+  CreditCard,
+  Clock,
+  MapPin,
+  CheckCircle,
+  HeartHandshake,
+} from "lucide-react";
 
 export function TrustSignals() {
   return (
@@ -27,40 +35,38 @@ export function TrustSignals() {
               Verified Guest Ratings
             </h3>
             <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
-              Highly rated on Google Maps for clean rooms, Himalayan views, home-cooked food & warm host care.
+              Highly rated on Google Maps for clean rooms, Himalayan views, home-cooked food & warm
+              host care.
             </p>
           </div>
 
           {/* Cancellation Policy */}
           <div className="rounded-2xl border border-border bg-background p-5 shadow-soft">
             <Clock className="h-6 w-6 text-moss mb-2" />
-            <h3 className="text-base font-semibold text-foreground">
-              Flexible Cancellation
-            </h3>
+            <h3 className="text-base font-semibold text-foreground">Flexible Cancellation</h3>
             <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
-              Full refund on cancellation requested up to 48 hours prior to check-in date. Zero hidden penalties.
+              Full refund on cancellation requested up to 48 hours prior to check-in date. Zero
+              hidden penalties.
             </p>
           </div>
 
           {/* Payment Terms */}
           <div className="rounded-2xl border border-border bg-background p-5 shadow-soft">
             <CreditCard className="h-6 w-6 text-moss mb-2" />
-            <h3 className="text-base font-semibold text-foreground">
-              Easy Payment Options
-            </h3>
+            <h3 className="text-base font-semibold text-foreground">Easy Payment Options</h3>
             <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
-              50% advance via UPI / Google Pay / PhonePe to confirm dates. Remaining balance paid at check-in.
+              50% advance via UPI / Google Pay / PhonePe to confirm dates. Remaining balance paid at
+              check-in.
             </p>
           </div>
 
           {/* Primary Base Location */}
           <div className="rounded-2xl border border-border bg-background p-5 shadow-soft">
             <MapPin className="h-6 w-6 text-moss mb-2" />
-            <h3 className="text-base font-semibold text-foreground">
-              Primary Location: Theog
-            </h3>
+            <h3 className="text-base font-semibold text-foreground">Primary Location: Theog</h3>
             <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
-              Peacefully situated in Village Kathot, Theog (6 km from town). Kufri (22 km) & Shimla (38 km) easily accessible.
+              Peacefully situated in Village Kathot, Theog (6 km from town). Kufri (22 km) & Shimla
+              (38 km) easily accessible.
             </p>
           </div>
         </div>

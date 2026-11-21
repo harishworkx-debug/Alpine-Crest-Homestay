@@ -60,7 +60,8 @@ function GalleryPage() {
         <p className="eyebrow">Real Property Gallery</p>
         <h1 className="mt-3 max-w-2xl text-4xl sm:text-5xl">Alpine Crest, in pictures</h1>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Explore actual photos of our rooms, private sunrise balconies, snow views, home-cooked Himachali food, and property surroundings in Kathot, near Theog.
+          Explore actual photos of our rooms, private sunrise balconies, snow views, home-cooked
+          Himachali food, and property surroundings in Kathot, near Theog.
         </p>
       </section>
 
@@ -118,7 +119,8 @@ function GalleryPage() {
         <div className="mt-16 rounded-2xl border border-primary/20 bg-primary/5 p-8 text-center sm:p-10">
           <h2 className="text-2xl font-bold text-foreground sm:text-3xl">Like What You See?</h2>
           <p className="mt-3 text-sm sm:text-base text-muted-foreground max-w-xl mx-auto">
-            Book direct with host Sahil Verma for verified low-rate guarantee, zero booking fees, and custom room preference.
+            Book direct with host Sahil Verma for verified low-rate guarantee, zero booking fees,
+            and custom room preference.
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
             <a
@@ -140,49 +142,62 @@ function GalleryPage() {
       </section>
 
       {/* Lightbox Overlay */}
-      {lightboxIndex !== null && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm transition-opacity duration-300">
-          <button
-            className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
-            onClick={() => setLightboxIndex(null)}
-            aria-label="Close"
-          >
-            <X className="h-8 w-8" />
-          </button>
-          
-          <button
-            className={`absolute left-4 sm:left-10 text-white/70 hover:text-white transition-colors p-2 ${lightboxIndex === 0 ? 'opacity-30 cursor-not-allowed' : ''}`}
-            onClick={() => setLightboxIndex((prev) => (prev !== null && prev > 0 ? prev - 1 : prev))}
-            disabled={lightboxIndex === 0}
-            aria-label="Previous image"
-          >
-            <ChevronLeft className="h-10 w-10" />
-          </button>
+      {lightboxIndex !== null &&
+        filtered[lightboxIndex] &&
+        (() => {
+          const currentImage = filtered[lightboxIndex]!;
+          return (
+            <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm transition-opacity duration-300">
+              <button
+                className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
+                onClick={() => setLightboxIndex(null)}
+                aria-label="Close"
+              >
+                <X className="h-8 w-8" />
+              </button>
 
-          <div className="max-w-5xl max-h-[85vh] w-full px-16 flex flex-col items-center">
-            <img 
-              src={filtered[lightboxIndex].src} 
-              alt={filtered[lightboxIndex].alt}
-              className="max-h-[70vh] w-auto object-contain rounded shadow-2xl"
-            />
-            <div className="mt-4 text-center">
-              <span className="inline-block bg-white/10 px-3 py-1 rounded-full text-xs font-semibold text-white/90 uppercase tracking-wider mb-2">
-                {filtered[lightboxIndex].category}
-              </span>
-              <p className="text-white text-base sm:text-lg font-medium max-w-2xl">{filtered[lightboxIndex].caption}</p>
+              <button
+                className={`absolute left-4 sm:left-10 text-white/70 hover:text-white transition-colors p-2 ${lightboxIndex === 0 ? "opacity-30 cursor-not-allowed" : ""}`}
+                onClick={() =>
+                  setLightboxIndex((prev) => (prev !== null && prev > 0 ? prev - 1 : prev))
+                }
+                disabled={lightboxIndex === 0}
+                aria-label="Previous image"
+              >
+                <ChevronLeft className="h-10 w-10" />
+              </button>
+
+              <div className="max-w-5xl max-h-[85vh] w-full px-16 flex flex-col items-center">
+                <img
+                  src={currentImage.src}
+                  alt={currentImage.alt}
+                  className="max-h-[70vh] w-auto object-contain rounded shadow-2xl"
+                />
+                <div className="mt-4 text-center">
+                  <span className="inline-block bg-white/10 px-3 py-1 rounded-full text-xs font-semibold text-white/90 uppercase tracking-wider mb-2">
+                    {currentImage.category}
+                  </span>
+                  <p className="text-white text-base sm:text-lg font-medium max-w-2xl">
+                    {currentImage.caption}
+                  </p>
+                </div>
+              </div>
+
+              <button
+                className={`absolute right-4 sm:right-10 text-white/70 hover:text-white transition-colors p-2 ${lightboxIndex === filtered.length - 1 ? "opacity-30 cursor-not-allowed" : ""}`}
+                onClick={() =>
+                  setLightboxIndex((prev) =>
+                    prev !== null && prev < filtered.length - 1 ? prev + 1 : prev,
+                  )
+                }
+                disabled={lightboxIndex === filtered.length - 1}
+                aria-label="Next image"
+              >
+                <ChevronRight className="h-10 w-10" />
+              </button>
             </div>
-          </div>
-
-          <button
-            className={`absolute right-4 sm:right-10 text-white/70 hover:text-white transition-colors p-2 ${lightboxIndex === filtered.length - 1 ? 'opacity-30 cursor-not-allowed' : ''}`}
-            onClick={() => setLightboxIndex((prev) => (prev !== null && prev < filtered.length - 1 ? prev + 1 : prev))}
-            disabled={lightboxIndex === filtered.length - 1}
-            aria-label="Next image"
-          >
-            <ChevronRight className="h-10 w-10" />
-          </button>
-        </div>
-      )}
+          );
+        })()}
     </>
   );
 }

@@ -541,12 +541,12 @@ Recommended structure:
 ├── homestay-near-shimla/
 │
 ├── places-to-visit/
-│   ├── theog/
-│   ├── kufri/
-│   ├── shimla/
-│   ├── fagu/
-│   ├── narkanda/
-│   └── chail/
+│ ├── theog/
+│ ├── kufri/
+│ ├── shimla/
+│ ├── fagu/
+│ ├── narkanda/
+│ └── chail/
 │
 └── blog/
 

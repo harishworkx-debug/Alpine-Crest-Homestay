@@ -86,20 +86,74 @@ const rooms = [
 ];
 
 const whyStay = [
-  { icon: Mountain, title: "Panoramic mountain views", desc: "East-facing balconies open onto the Shali Tibba range and a wide deodar valley." },
-  { icon: Sunrise, title: "Sunrise from your room", desc: "The first light spills over the ridgeline straight onto your balcony." },
-  { icon: UtensilsCrossed, title: "Home-cooked Himachali food", desc: "Siddu, madra, rajma-chawal — cooked in the family kitchen on request." },
-  { icon: Leaf, title: "Peaceful, uncrowded setting", desc: "A quiet village above the orchards, away from the tourist crowds of Kufri and Shimla." },
-  { icon: Car, title: "Free private parking", desc: "Secure parking right at the house, with easy access from NH-5." },
-  { icon: Zap, title: "Power backup & Wi-Fi", desc: "Uninterrupted comfort with round-the-clock hot water and free Wi-Fi." },
+  {
+    icon: Mountain,
+    title: "Panoramic mountain views",
+    desc: "East-facing balconies open onto the Shali Tibba range and a wide deodar valley.",
+  },
+  {
+    icon: Sunrise,
+    title: "Sunrise from your room",
+    desc: "The first light spills over the ridgeline straight onto your balcony.",
+  },
+  {
+    icon: UtensilsCrossed,
+    title: "Home-cooked Himachali food",
+    desc: "Siddu, madra, rajma-chawal — cooked in the family kitchen on request.",
+  },
+  {
+    icon: Leaf,
+    title: "Peaceful, uncrowded setting",
+    desc: "A quiet village above the orchards, away from the tourist crowds of Kufri and Shimla.",
+  },
+  {
+    icon: Car,
+    title: "Free private parking",
+    desc: "Secure parking right at the house, with easy access from NH-5.",
+  },
+  {
+    icon: Zap,
+    title: "Power backup & Wi-Fi",
+    desc: "Uninterrupted comfort with round-the-clock hot water and free Wi-Fi.",
+  },
 ];
 
 const destinations = [
-  { name: "Theog Town Center", distance: "6 km", slug: "/places-to-visit/theog", image: "/images/destinations/image.png", alt: "Mountain landscape near Theog, Himachal Pradesh" },
-  { name: "Fagu Viewpoints", distance: "16 km", slug: "/places-to-visit/fagu", image: "/images/destinations/image copy 2.png", alt: "Himalayan village and valley near Fagu, Himachal Pradesh" },
-  { name: "Kufri Nature Park", distance: "22 km", slug: "/places-to-visit/kufri", image: "/images/destinations/image copy.png", alt: "Snowy mountain peaks near Kufri, Himachal Pradesh" },
-  { name: "Shimla Mall Road", distance: "38 km", slug: "/places-to-visit/shimla", image: "/images/destinations/image copy 3.png", alt: "Shimla Mall Road and colonial architecture, Himachal Pradesh" },
-  { name: "Narkanda & Hatu Peak", distance: "45 km", slug: "/places-to-visit/narkanda", image: "/images/destinations/image copy 4.png", alt: "Dense pine and deodar forest near Narkanda, Himachal Pradesh" },
+  {
+    name: "Theog Town Center",
+    distance: "6 km",
+    slug: "/places-to-visit/theog",
+    image: "/images/destinations/image.png",
+    alt: "Mountain landscape near Theog, Himachal Pradesh",
+  },
+  {
+    name: "Fagu Viewpoints",
+    distance: "16 km",
+    slug: "/places-to-visit/fagu",
+    image: "/images/destinations/image copy 2.png",
+    alt: "Himalayan village and valley near Fagu, Himachal Pradesh",
+  },
+  {
+    name: "Kufri Nature Park",
+    distance: "22 km",
+    slug: "/places-to-visit/kufri",
+    image: "/images/destinations/image copy.png",
+    alt: "Snowy mountain peaks near Kufri, Himachal Pradesh",
+  },
+  {
+    name: "Shimla Mall Road",
+    distance: "38 km",
+    slug: "/places-to-visit/shimla",
+    image: "/images/destinations/image copy 3.png",
+    alt: "Shimla Mall Road and colonial architecture, Himachal Pradesh",
+  },
+  {
+    name: "Narkanda & Hatu Peak",
+    distance: "45 km",
+    slug: "/places-to-visit/narkanda",
+    image: "/images/destinations/image copy 4.png",
+    alt: "Dense pine and deodar forest near Narkanda, Himachal Pradesh",
+  },
 ];
 
 function HomePage() {
@@ -116,7 +170,10 @@ function HomePage() {
     <>
       {/* Hero */}
       <section className="relative">
-        <div ref={heroRef} className="relative h-[100dvh] min-h-[750px] sm:h-[82vh] sm:min-h-[560px] w-full overflow-hidden">
+        <div
+          ref={heroRef}
+          className="relative h-[100dvh] min-h-[750px] sm:h-[82vh] sm:min-h-[560px] w-full overflow-hidden"
+        >
           <motion.img
             src={exterior}
             alt="Alpine Crest Homestay exterior on a Himalayan slope near Theog, Himachal Pradesh"
@@ -129,10 +186,7 @@ function HomePage() {
             aria-hidden="true"
             className="absolute inset-0 bg-gradient-to-t from-pine/90 via-pine/45 to-pine/20"
           />
-          <motion.div
-            style={{ opacity: heroOpacity }}
-            className="absolute inset-0 flex items-end"
-          >
+          <motion.div style={{ opacity: heroOpacity }} className="absolute inset-0 flex items-end">
             <div className="container-page pb-16 sm:pb-24">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -156,7 +210,9 @@ function HomePage() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="mt-5 max-w-xl text-base leading-relaxed text-sand/85"
               >
-                Stay in a peaceful mountain homestay in Kathot near Theog, with panoramic Himalayan views, private balconies, home-cooked Himachali food and easy access to Kufri and Shimla.
+                Stay in a peaceful mountain homestay in Kathot near Theog, with panoramic Himalayan
+                views, private balconies, home-cooked Himachali food and easy access to Kufri and
+                Shimla.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -164,12 +220,13 @@ function HomePage() {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 className="mt-8 flex flex-wrap gap-3"
               >
-                <CallLink variant="outline" className="border-sand/50 bg-sand/15 text-sand hover:bg-sand/25">
+                <CallLink
+                  variant="outline"
+                  className="border-sand/50 bg-sand/15 text-sand hover:bg-sand/25"
+                >
                   Check Availability
                 </CallLink>
-                <WhatsAppLink message={WA.general}>
-                  WhatsApp Booking
-                </WhatsAppLink>
+                <WhatsAppLink message={WA.general}>WhatsApp Booking</WhatsAppLink>
               </motion.div>
 
               <motion.ul
@@ -178,14 +235,17 @@ function HomePage() {
                 transition={{ duration: 0.6, delay: 0.5 }}
                 className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs text-sand/75"
               >
-                {["Mountain Views", "Private Balcony", "Home-Cooked Food", "Near Theog & Kufri"].map(
-                  (item) => (
-                    <li key={item} className="flex items-center gap-1.5">
-                      <Check className="h-3.5 w-3.5" aria-hidden="true" />
-                      {item}
-                    </li>
-                  ),
-                )}
+                {[
+                  "Mountain Views",
+                  "Private Balcony",
+                  "Home-Cooked Food",
+                  "Near Theog & Kufri",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-1.5">
+                    <Check className="h-3.5 w-3.5" aria-hidden="true" />
+                    {item}
+                  </li>
+                ))}
               </motion.ul>
             </div>
           </motion.div>
@@ -220,15 +280,15 @@ function HomePage() {
           />
           <Reveal delay={0.1}>
             <p className="mt-5 leading-relaxed text-muted-foreground">
-              Alpine Crest Homestay sits above the apple orchards of Village Kathot,
-              just off Majhar Road in Theog. It is a small house — a handful of rooms,
-              a shared lounge, a terrace that catches the first light on the Shali
-              Tibba range — and it is run by the family that lives here.
+              Alpine Crest Homestay sits above the apple orchards of Village Kathot, just off Majhar
+              Road in Theog. It is a small house — a handful of rooms, a shared lounge, a terrace
+              that catches the first light on the Shali Tibba range — and it is run by the family
+              that lives here.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Days here are unhurried: tea on the balcony, a walk through the orchard,
-              a rajma-chawal lunch, and evenings quiet enough to hear the wind moving
-              through the deodars.
+              Days here are unhurried: tea on the balcony, a walk through the orchard, a
+              rajma-chawal lunch, and evenings quiet enough to hear the wind moving through the
+              deodars.
             </p>
           </Reveal>
           <StaggerGroup className="mt-7 grid gap-3 sm:grid-cols-3" stagger={0.08}>
@@ -290,9 +350,9 @@ function HomePage() {
             Wake up to a panorama of pine, deodar and the Shali Tibba range
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-sand/80">
-            The balconies face east, so the first light of the day spills over the
-            ridgeline and fills the valley with layered colour. Evenings bring the
-            deodars into silhouette against a warm sky.
+            The balconies face east, so the first light of the day spills over the ridgeline and
+            fills the valley with layered colour. Evenings bring the deodars into silhouette against
+            a warm sky.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <WhatsAppLink message={WA.location} variant="primary">
@@ -350,7 +410,9 @@ function HomePage() {
                     </ul>
                     <div className="mt-6 flex flex-wrap gap-3">
                       <WhatsAppLink message={r.message} className="px-5 py-2.5">
-                        {r.name.includes("Standard") ? "Book Standard Room (₹2,300)" : "Book Deluxe Balcony (₹2,800)"}
+                        {r.name.includes("Standard")
+                          ? "Book Standard Room (₹2,300)"
+                          : "Book Deluxe Balcony (₹2,800)"}
                       </WhatsAppLink>
                       <Link
                         to="/rooms"
@@ -379,10 +441,9 @@ function HomePage() {
           />
           <Reveal delay={0.1}>
             <p className="mt-5 leading-relaxed text-muted-foreground">
-              The Deluxe Room has a private balcony that opens directly onto the
-              deodar ridgeline. Pull up a chair, take your tea outside, and watch the
-              light move across the valley from sunrise to sunset. No highway noise,
-              no town hum — just wind through the pines.
+              The Deluxe Room has a private balcony that opens directly onto the deodar ridgeline.
+              Pull up a chair, take your tea outside, and watch the light move across the valley
+              from sunrise to sunset. No highway noise, no town hum — just wind through the pines.
             </p>
             <ul className="mt-6 grid gap-2.5 text-sm text-muted-foreground">
               {[
@@ -425,9 +486,14 @@ function HomePage() {
       <section className="py-20 border-y border-border bg-card">
         <div className="container-page max-w-4xl mx-auto text-center">
           <Reveal>
-            <h2 className="font-display text-3xl text-pine sm:text-4xl">Looking for the Best Homestay in Theog?</h2>
+            <h2 className="font-display text-3xl text-pine sm:text-4xl">
+              Looking for the Best Homestay in Theog?
+            </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground text-left sm:text-center">
-              Choosing the right homestay in Theog is about more than finding a room. Travellers look for peaceful surroundings, comfortable accommodation, beautiful mountain views, warm hospitality and convenient access to nearby places. Alpine Crest Homestay brings these experiences together in Kathot near Theog.
+              Choosing the right homestay in Theog is about more than finding a room. Travellers
+              look for peaceful surroundings, comfortable accommodation, beautiful mountain views,
+              warm hospitality and convenient access to nearby places. Alpine Crest Homestay brings
+              these experiences together in Kathot near Theog.
             </p>
             <div className="mt-10 text-left sm:text-center">
               <h3 className="text-xl font-semibold text-pine">Why guests choose Alpine Crest</h3>
@@ -440,9 +506,12 @@ function HomePage() {
                   "Home-cooked Himachali food",
                   "Near Kufri",
                   "Near Shimla",
-                  "Direct booking"
+                  "Direct booking",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full shadow-sm">
+                  <li
+                    key={item}
+                    className="flex items-center gap-1.5 bg-secondary/80 px-4 py-2 rounded-full shadow-sm"
+                  >
                     <Check className="h-4 w-4" /> {item}
                   </li>
                 ))}
@@ -466,10 +535,10 @@ function HomePage() {
             Himachali meals cooked in the family kitchen
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-sand/80">
-            Breakfast is parathas, eggs and chai. Lunch and dinner are simple home
-            food — rajma, dal, seasonal sabzi, rice and rotis — with Himachali dishes
-            like siddu and madra on request. Vegetarian by default, and we cook around
-            allergies and preferences if you tell us in advance.
+            Breakfast is parathas, eggs and chai. Lunch and dinner are simple home food — rajma,
+            dal, seasonal sabzi, rice and rotis — with Himachali dishes like siddu and madra on
+            request. Vegetarian by default, and we cook around allergies and preferences if you tell
+            us in advance.
           </p>
           <div className="mt-7">
             <WhatsAppLink message={WA.meals} variant="primary">
@@ -492,7 +561,10 @@ function HomePage() {
           {amenities.map(({ icon: Icon, label }) => (
             <StaggerItem key={label}>
               <div className="group rounded-xl border border-border bg-card p-5 text-center shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift">
-                <Icon className="mx-auto h-6 w-6 text-moss transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+                <Icon
+                  className="mx-auto h-6 w-6 text-moss transition-transform duration-300 group-hover:scale-110"
+                  aria-hidden="true"
+                />
                 <p className="mt-3 text-sm font-semibold">{label}</p>
               </div>
             </StaggerItem>
@@ -526,8 +598,8 @@ function HomePage() {
             What's around Alpine Crest
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-sand/80">
-            Theog, Kufri, Shimla, Fagu, Narkanda and Chail are all within easy reach.
-            Use the homestay as a quiet base and explore the upper Shimla hills by day.
+            Theog, Kufri, Shimla, Fagu, Narkanda and Chail are all within easy reach. Use the
+            homestay as a quiet base and explore the upper Shimla hills by day.
           </p>
         </Reveal>
       </ParallaxBanner>
@@ -551,7 +623,14 @@ function HomePage() {
                     width={765}
                     height={520}
                     loading="lazy"
-                    style={{ width: "100%", minWidth: 0, height: "160px", minHeight: "160px", maxHeight: "160px", display: "block" }}
+                    style={{
+                      width: "100%",
+                      minWidth: 0,
+                      height: "160px",
+                      minHeight: "160px",
+                      maxHeight: "160px",
+                      display: "block",
+                    }}
                     className="h-40 min-h-40 max-h-40 w-full min-w-0 object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-pine/55 to-transparent" />
@@ -586,9 +665,8 @@ function HomePage() {
             <SectionHeading eyebrow="Find Us" title={SITE.addressFull} />
             <Reveal delay={0.1}>
               <p className="mt-5 leading-relaxed text-muted-foreground">
-                We're a short drive off NH-5 at Theog, with parking right at the house.
-                Send us a message and we'll share a pin, road conditions and taxi help
-                for the last stretch.
+                We're a short drive off NH-5 at Theog, with parking right at the house. Send us a
+                message and we'll share a pin, road conditions and taxi help for the last stretch.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <WhatsAppLink message={WA.location}>Message us</WhatsAppLink>
@@ -617,10 +695,26 @@ function HomePage() {
         </Reveal>
         <StaggerGroup className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" stagger={0.08}>
           {[
-            { step: "01", title: "By road", desc: "Theog is on NH-5, roughly an hour's drive east of Shimla. From Theog, follow Majhar Road to Village Kathot." },
-            { step: "02", title: "By bus", desc: "State buses run regularly between Shimla and Theog. A short taxi ride from Theog reaches the house." },
-            { step: "03", title: "By train", desc: "The nearest railhead is Shimla (narrow-gauge toy train from Kalka). From Shimla, about an hour by road." },
-            { step: "04", title: "By air", desc: "The nearest airport is Jubbarhatti near Shimla. From there, it is roughly a 2-hour drive. We can arrange a pickup." },
+            {
+              step: "01",
+              title: "By road",
+              desc: "Theog is on NH-5, roughly an hour's drive east of Shimla. From Theog, follow Majhar Road to Village Kathot.",
+            },
+            {
+              step: "02",
+              title: "By bus",
+              desc: "State buses run regularly between Shimla and Theog. A short taxi ride from Theog reaches the house.",
+            },
+            {
+              step: "03",
+              title: "By train",
+              desc: "The nearest railhead is Shimla (narrow-gauge toy train from Kalka). From Shimla, about an hour by road.",
+            },
+            {
+              step: "04",
+              title: "By air",
+              desc: "The nearest airport is Jubbarhatti near Shimla. From there, it is roughly a 2-hour drive. We can arrange a pickup.",
+            },
           ].map(({ step, title, desc }) => (
             <StaggerItem key={step}>
               <div className="h-full rounded-2xl border border-border bg-card p-6 shadow-soft">
@@ -636,10 +730,7 @@ function HomePage() {
       {/* Gallery Preview */}
       <section className="container-page py-20">
         <Reveal>
-          <SectionHeading
-            eyebrow="Gallery"
-            title="Glimpses of Alpine Crest"
-          />
+          <SectionHeading eyebrow="Gallery" title="Glimpses of Alpine Crest" />
         </Reveal>
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4">
           {[snowView2, deluxeBalcony, foodWithMountain, sunset].map((img, i) => (
@@ -670,11 +761,7 @@ function HomePage() {
       <section className="bg-secondary/60 py-20">
         <div className="container-page">
           <Reveal>
-            <SectionHeading
-              eyebrow="Guest Reviews"
-              title="What our guests say"
-              align="center"
-            />
+            <SectionHeading eyebrow="Guest Reviews" title="What our guests say" align="center" />
           </Reveal>
           <StaggerGroup className="mt-12 grid gap-6 md:grid-cols-3" stagger={0.1}>
             {/* Real Google reviews */}
@@ -682,17 +769,17 @@ function HomePage() {
               {
                 text: "Had a wonderful stay at Alpine Crest Homestay! The rooms were exceptionally clean, spacious, and beautifully designed with wooden interiors... The balcony offered breathtaking valley and sunset views.",
                 author: "Sanjeev Mann",
-                source: "Google"
+                source: "Google",
               },
               {
                 text: "Had a great trip with friends all thanks to the sahil verma working there... one of the best views, food, rooms and services in the whole shimla.",
                 author: "Shaurya Thakur",
-                source: "Google"
+                source: "Google",
               },
               {
                 text: "Had a really pleasant stay at Alpine Crest Homestay. The room was clean and comfortable, and the mountain view from the property was beautiful. The location is peaceful and away from the usual crowd.",
                 author: "Nancy Soni",
-                source: "Google"
+                source: "Google",
               },
             ].map((review, i) => (
               <StaggerItem key={i}>
@@ -702,7 +789,9 @@ function HomePage() {
                       <Star key={i} className="h-4 w-4 fill-current" />
                     ))}
                   </div>
-                  <p className="flex-1 text-sm leading-relaxed text-muted-foreground mb-6">"{review.text}"</p>
+                  <p className="flex-1 text-sm leading-relaxed text-muted-foreground mb-6">
+                    "{review.text}"
+                  </p>
                   <div>
                     <p className="font-semibold text-sm">{review.author}</p>
                     <p className="text-xs text-muted-foreground">{review.source}</p>
@@ -739,9 +828,8 @@ function HomePage() {
             Book your peaceful mountain stay
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-sand/80">
-            Send us a WhatsApp message with your travel dates. We will reply with
-            availability, pricing and taxi help for reaching us from Shimla, Kufri
-            or the airport.
+            Send us a WhatsApp message with your travel dates. We will reply with availability,
+            pricing and taxi help for reaching us from Shimla, Kufri or the airport.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <WhatsAppLink message={WA.general} variant="primary">

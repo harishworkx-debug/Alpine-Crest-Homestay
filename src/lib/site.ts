@@ -9,8 +9,7 @@ export const SITE = {
   region: "Himachal Pradesh",
   postalCode: "171012",
   country: "IN",
-  addressFull:
-    "Village Kathot, PO, Majhar Rd, Theog, Himachal Pradesh 171012, India",
+  addressFull: "Village Kathot, PO, Majhar Rd, Theog, Himachal Pradesh 171012, India",
   latitude: 31.1213478,
   longitude: 77.3168714,
   mapsEmbed:
@@ -24,7 +23,8 @@ export function waLink(message: string) {
 }
 
 export const WA = {
-  general: "Hello Alpine Crest Homestay, I found you online and would like to check room availability for my stay in Theog.",
+  general:
+    "Hello Alpine Crest Homestay, I found you online and would like to check room availability for my stay in Theog.",
   standard:
     "Hello Alpine Crest Homestay, I am interested in the Standard Room. Please share availability and price.",
   deluxe:
@@ -44,7 +44,9 @@ export function pageMeta(opts: {
 }) {
   const { title, description, path, type = "website" } = opts;
   // Ensure canonical URL has www. and trailing slash
-  const canonicalUrl = path.startsWith("http") ? path : `https://www.alpinecresthomestay.com${path === "/" ? "/" : path + "/"}`;
+  const canonicalUrl = path.startsWith("http")
+    ? path
+    : `https://www.alpinecresthomestay.com${path === "/" ? "/" : path + "/"}`;
   return {
     meta: [
       { title },

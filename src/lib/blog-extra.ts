@@ -199,7 +199,7 @@ export const blogExtraArticles: BlogArticle[] = [
     body: [
       "Theog is quickly becoming a favourite for travellers seeking a peaceful mountain stay without the commercialization of nearby Shimla and Kufri.",
       "The best homestays in Theog are located just off the main NH-5 highway, in quiet villages like Kathot. Here, you wake up to panoramic mountain views and the sound of wind through the deodar trees, rather than traffic.",
-      "When choosing a homestay, look for properties that offer genuine local hospitality and home-cooked Himachali food. Alpine Crest Homestay is an excellent option, providing comfortable mountain-view rooms, private balconies, and easy access to both Kufri and Shimla while maintaining a perfectly tranquil environment."
+      "When choosing a homestay, look for properties that offer genuine local hospitality and home-cooked Himachali food. Alpine Crest Homestay is an excellent option, providing comfortable mountain-view rooms, private balconies, and easy access to both Kufri and Shimla while maintaining a perfectly tranquil environment.",
     ],
   },
   {
@@ -216,7 +216,7 @@ export const blogExtraArticles: BlogArticle[] = [
     body: [
       "Kufri is a fantastic day-trip destination, but its popularity means it can get very crowded, especially during the snow season and summer holidays.",
       "The smartest way to experience Kufri is to stay nearby in Theog. The drive between Theog and Kufri is short and scenic, passing through the beautiful orchards of Fagu.",
-      "Alpine Crest Homestay in Kathot near Theog offers a peaceful alternative. You can spend the morning exploring the Himalayan Nature Park in Kufri and then retreat to your private balcony overlooking the Shali Tibba range in the afternoon."
+      "Alpine Crest Homestay in Kathot near Theog offers a peaceful alternative. You can spend the morning exploring the Himalayan Nature Park in Kufri and then retreat to your private balcony overlooking the Shali Tibba range in the afternoon.",
     ],
   },
   {
@@ -233,7 +233,7 @@ export const blogExtraArticles: BlogArticle[] = [
     body: [
       "Shimla offers colonial charm, but if you want uninterrupted mountain views and serene sunrises, you need to look slightly further afield.",
       "The Theog ridge, about an hour east of Shimla, provides some of the most spectacular, unobstructed valley views in the region.",
-      "Alpine Crest Homestay offers an exceptional mountain view stay near Shimla. The east-facing Deluxe Rooms feature private balconies where you can watch the sunrise over the Himalayas, offering a level of tranquility that is hard to find in Shimla town."
+      "Alpine Crest Homestay offers an exceptional mountain view stay near Shimla. The east-facing Deluxe Rooms feature private balconies where you can watch the sunrise over the Himalayas, offering a level of tranquility that is hard to find in Shimla town.",
     ],
   },
   {
@@ -250,7 +250,7 @@ export const blogExtraArticles: BlogArticle[] = [
     body: [
       "Theog is less about ticking off a list of tourist attractions and more about enjoying the slow pace of mountain life.",
       "Take a walk through the apple orchards in Kathot, enjoy the panoramic views from the Theog ridge, or visit the ancient local temples dotting the surrounding villages.",
-      "It also serves as a perfect hub for day trips: head to Kufri for the Nature Park, Fagu for its scenic landscapes, or Narkanda for the Hatu Peak trek."
+      "It also serves as a perfect hub for day trips: head to Kufri for the Nature Park, Fagu for its scenic landscapes, or Narkanda for the Hatu Peak trek.",
     ],
   },
   {
@@ -267,14 +267,13 @@ export const blogExtraArticles: BlogArticle[] = [
     body: [
       "The journey from Shimla to Theog covers about 30 kilometers on NH-5 and typically takes around an hour by car.",
       "The road is well-maintained and offers beautiful views as you leave the dense Shimla traffic behind and enter the quieter pine and cedar forests of the upper hills.",
-      "You can easily hire a taxi from Shimla, or take one of the frequent local buses. Once you arrive, Alpine Crest Homestay in Kathot provides a perfect, peaceful base just off the highway."
+      "You can easily hire a taxi from Shimla, or take one of the frequent local buses. Once you arrive, Alpine Crest Homestay in Kathot provides a perfect, peaceful base just off the highway.",
     ],
   },
   {
     slug: "weekend-trip-to-theog-from-chandigarh",
     title: "Weekend Trip to Theog from Chandigarh",
-    excerpt:
-      "Plan the perfect weekend escape from Chandigarh to the peaceful mountains of Theog.",
+    excerpt: "Plan the perfect weekend escape from Chandigarh to the peaceful mountains of Theog.",
     date: "2025-04-10",
     readTime: "5 min read",
     relatedLinks: [
@@ -284,7 +283,7 @@ export const blogExtraArticles: BlogArticle[] = [
     body: [
       "Theog is an ideal weekend getaway from Chandigarh. The drive takes about 4.5 to 5 hours via the Himalayan Expressway and NH-5.",
       "Leave early on Friday or Saturday morning to avoid the traffic around Kalka and Shimla. By lunchtime, you can be relaxing on a balcony with mountain views.",
-      "Spend your weekend enjoying home-cooked Himachali food, walking through local orchards, and breathing in the fresh mountain air at Alpine Crest Homestay before heading back on Sunday afternoon."
+      "Spend your weekend enjoying home-cooked Himachali food, walking through local orchards, and breathing in the fresh mountain air at Alpine Crest Homestay before heading back on Sunday afternoon.",
     ],
   },
 ];

@@ -49,11 +49,10 @@ function HomestayInFaguPage() {
             Peaceful Homestay Base for Fagu
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            If you are looking for a peaceful homestay near Fagu, Alpine Crest
-            Homestay offers a beautiful mountain stay in Village Kathot near Theog.
-            It's a convenient base for exploring Fagu's apple orchards and scenic
-            viewpoints. Enjoy the mountain surroundings and easy access to
-            Fagu's sights while staying in a comfortable and warm environment.
+            If you are looking for a peaceful homestay near Fagu, Alpine Crest Homestay offers a
+            beautiful mountain stay in Village Kathot near Theog. It's a convenient base for
+            exploring Fagu's apple orchards and scenic viewpoints. Enjoy the mountain surroundings
+            and easy access to Fagu's sights while staying in a comfortable and warm environment.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <WhatsAppLink message={WA.location}>Check Availability on WhatsApp</WhatsAppLink>
@@ -83,31 +82,29 @@ function HomestayInFaguPage() {
           <div className="prose-stay">
             <h2>Why Stay Near Fagu?</h2>
             <p>
-              Fagu is a small, quiet village on the Shimla-Narkanda road, famous for
-              its lush apple orchards and sweeping views of the Himalayas. Staying near
-              Theog lets you easily visit Fagu as a quick trip while avoiding the
-              tourist rush of nearby Kufri.
+              Fagu is a small, quiet village on the Shimla-Narkanda road, famous for its lush apple
+              orchards and sweeping views of the Himalayas. Staying near Theog lets you easily visit
+              Fagu as a quick trip while avoiding the tourist rush of nearby Kufri.
             </p>
 
             <h2>Alpine Crest Homestay Near Fagu</h2>
             <p>
-              Our homestay is located in Village Kathot near Theog. The scenic drive
-              makes it extremely easy to visit Fagu's orchards during the day,
-              then come back to a peaceful balcony for the evening.
+              Our homestay is located in Village Kathot near Theog. The scenic drive makes it
+              extremely easy to visit Fagu's orchards during the day, then come back to a peaceful
+              balcony for the evening.
             </p>
             <p>
-              To be clear and honest: Alpine Crest Homestay is not in Fagu itself.
-              It is in Village Kathot near Theog. We say "near Fagu" because it
-              serves as an excellent, comfortable base for travellers exploring the area.
+              To be clear and honest: Alpine Crest Homestay is not in Fagu itself. It is in Village
+              Kathot near Theog. We say "near Fagu" because it serves as an excellent, comfortable
+              base for travellers exploring the area.
             </p>
 
             <h2>Rooms With Mountain Views</h2>
             <p>
-              The homestay offers two room types. The Standard Room has a
-              comfortable double bed and an attached bathroom with round-the-clock
-              hot water. The Deluxe Room adds a private balcony that opens onto the
-              deodar ridgeline, with a seating area for taking in the view. Both are
-              clean, simple and wood-warmed, with access to the shared lounge,
+              The homestay offers two room types. The Standard Room has a comfortable double bed and
+              an attached bathroom with round-the-clock hot water. The Deluxe Room adds a private
+              balcony that opens onto the deodar ridgeline, with a seating area for taking in the
+              view. Both are clean, simple and wood-warmed, with access to the shared lounge,
               terrace and garden.
             </p>
 
@@ -121,9 +118,9 @@ function HomestayInFaguPage() {
 
             <h2>How to Reach Fagu From Alpine Crest</h2>
             <p>
-              The homestay is a very short, scenic drive from Fagu on NH-5. We can help arrange
-              a taxi for the trip to Fagu and for wider sightseeing. Free private
-              parking is available right at the house if you are driving yourself.
+              The homestay is a very short, scenic drive from Fagu on NH-5. We can help arrange a
+              taxi for the trip to Fagu and for wider sightseeing. Free private parking is available
+              right at the house if you are driving yourself.
             </p>
           </div>
         </Reveal>
@@ -203,8 +200,8 @@ function HomestayInFaguPage() {
         <div className="rounded-2xl bg-primary px-8 py-12 text-center text-primary-foreground">
           <h2 className="text-3xl">Book Your Stay For Fagu</h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-sand/85">
-            Send us a WhatsApp message with your travel dates and we will get back
-            to you with availability, pricing and taxi help for visiting Fagu.
+            Send us a WhatsApp message with your travel dates and we will get back to you with
+            availability, pricing and taxi help for visiting Fagu.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <WhatsAppLink message={WA.location} variant="primary">

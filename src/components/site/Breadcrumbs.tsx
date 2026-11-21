@@ -1,11 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ChevronRight } from "lucide-react";
 
-export function Breadcrumbs({
-  items,
-}: {
-  items: { name: string; path?: string }[];
-}) {
+export function Breadcrumbs({ items }: { items: { name: string; path?: string }[] }) {
   return (
     <nav aria-label="Breadcrumb" className="container-page pt-6">
       <ol className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">

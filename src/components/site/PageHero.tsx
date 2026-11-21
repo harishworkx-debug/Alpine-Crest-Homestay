@@ -20,9 +20,7 @@ export function PageHero({
       <div>
         <p className="eyebrow">{eyebrow}</p>
         <h1 className="mt-3 text-4xl leading-[1.1] sm:text-5xl">{title}</h1>
-        <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-          {intro}
-        </p>
+        <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">{intro}</p>
         {children && <div className="mt-7 flex flex-wrap gap-3">{children}</div>}
       </div>
       {image && (

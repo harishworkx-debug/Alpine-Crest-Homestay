@@ -24,9 +24,14 @@ export const Route = createFileRoute("/homestay-near-narkanda")({
           "Peaceful homestay base for exploring Narkanda. Mountain views, private balconies, home-cooked food.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://www.alpinecresthomestay.com/homestay-near-narkanda/" },
+      {
+        property: "og:url",
+        content: "https://www.alpinecresthomestay.com/homestay-near-narkanda/",
+      },
     ],
-    links: [{ rel: "canonical", href: "https://www.alpinecresthomestay.com/homestay-near-narkanda/" }],
+    links: [
+      { rel: "canonical", href: "https://www.alpinecresthomestay.com/homestay-near-narkanda/" },
+    ],
     scripts: [
       breadcrumbSchema([
         { name: "Home", path: "/" },
@@ -49,12 +54,11 @@ function HomestayInNarkandaPage() {
             Peaceful Homestay Base for Narkanda
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            If you are looking for a peaceful homestay near Narkanda, Alpine Crest
-            Homestay offers a peaceful mountain stay in Village Kathot near Theog.
-            It's a convenient lower-altitude base before heading up to Narkanda
-            for skiing in winter, visiting Hatu Peak, or exploring the apple orchards
-            of Kotgarh. Enjoy the mountain surroundings and easy access to
-            Narkanda's sights without staying in the colder, crowded town.
+            If you are looking for a peaceful homestay near Narkanda, Alpine Crest Homestay offers a
+            peaceful mountain stay in Village Kathot near Theog. It's a convenient lower-altitude
+            base before heading up to Narkanda for skiing in winter, visiting Hatu Peak, or
+            exploring the apple orchards of Kotgarh. Enjoy the mountain surroundings and easy access
+            to Narkanda's sights without staying in the colder, crowded town.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <WhatsAppLink message={WA.location}>Check Availability on WhatsApp</WhatsAppLink>
@@ -84,33 +88,31 @@ function HomestayInNarkandaPage() {
           <div className="prose-stay">
             <h2>Why Stay Near Narkanda?</h2>
             <p>
-              Narkanda is a beautiful hill town about 60 km from Shimla, known for
-              its skiing slopes in winter and Hatu Peak. Due to its higher altitude,
-              it gets quite cold and accommodation can fill up quickly. Staying near
-              Theog lets you enjoy Narkanda's sights as a day trip while resting in
-              a slightly warmer, quiet setting in the evening.
+              Narkanda is a beautiful hill town about 60 km from Shimla, known for its skiing slopes
+              in winter and Hatu Peak. Due to its higher altitude, it gets quite cold and
+              accommodation can fill up quickly. Staying near Theog lets you enjoy Narkanda's sights
+              as a day trip while resting in a slightly warmer, quiet setting in the evening.
             </p>
 
             <h2>Alpine Crest Homestay Near Narkanda</h2>
             <p>
-              Our homestay is located in Village Kathot near Theog, on NH-5, the same
-              route that goes to Narkanda. The scenic drive makes it easy to visit
-              Narkanda, the Hatu Peak, and the apple belt of Kotgarh during the day,
-              then come back to a peaceful balcony for the evening.
+              Our homestay is located in Village Kathot near Theog, on NH-5, the same route that
+              goes to Narkanda. The scenic drive makes it easy to visit Narkanda, the Hatu Peak, and
+              the apple belt of Kotgarh during the day, then come back to a peaceful balcony for the
+              evening.
             </p>
             <p>
-              To be clear and honest: Alpine Crest Homestay is not in Narkanda town itself.
-              It is in Village Kathot near Theog. We say "near Narkanda" because it
-              serves as an excellent, comfortable base for travellers exploring the region.
+              To be clear and honest: Alpine Crest Homestay is not in Narkanda town itself. It is in
+              Village Kathot near Theog. We say "near Narkanda" because it serves as an excellent,
+              comfortable base for travellers exploring the region.
             </p>
 
             <h2>Rooms With Mountain Views</h2>
             <p>
-              The homestay offers two room types. The Standard Room has a
-              comfortable double bed and an attached bathroom with round-the-clock
-              hot water. The Deluxe Room adds a private balcony that opens onto the
-              deodar ridgeline, with a seating area for taking in the view. Both are
-              clean, simple and wood-warmed, with access to the shared lounge,
+              The homestay offers two room types. The Standard Room has a comfortable double bed and
+              an attached bathroom with round-the-clock hot water. The Deluxe Room adds a private
+              balcony that opens onto the deodar ridgeline, with a seating area for taking in the
+              view. Both are clean, simple and wood-warmed, with access to the shared lounge,
               terrace and garden.
             </p>
 
@@ -124,9 +126,9 @@ function HomestayInNarkandaPage() {
 
             <h2>How to Reach Narkanda From Alpine Crest</h2>
             <p>
-              The homestay is a scenic drive from Narkanda on NH-5. We can help arrange
-              a taxi for the trip to Narkanda and for wider sightseeing. Free private
-              parking is available right at the house if you are driving yourself.
+              The homestay is a scenic drive from Narkanda on NH-5. We can help arrange a taxi for
+              the trip to Narkanda and for wider sightseeing. Free private parking is available
+              right at the house if you are driving yourself.
             </p>
           </div>
         </Reveal>
@@ -206,8 +208,8 @@ function HomestayInNarkandaPage() {
         <div className="rounded-2xl bg-primary px-8 py-12 text-center text-primary-foreground">
           <h2 className="text-3xl">Book Your Stay For Narkanda</h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-sand/85">
-            Send us a WhatsApp message with your travel dates and we will get back
-            to you with availability, pricing and taxi help for visiting Narkanda.
+            Send us a WhatsApp message with your travel dates and we will get back to you with
+            availability, pricing and taxi help for visiting Narkanda.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <WhatsAppLink message={WA.location} variant="primary">

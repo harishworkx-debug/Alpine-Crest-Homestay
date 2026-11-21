@@ -2,7 +2,17 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Reveal, StaggerGroup, StaggerItem } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
-import { exterior, deluxeBalcony, standardRoom, deluxeRoom, lounge, rooms1, rooms2, rooms3, rooms3_2 } from "@/lib/images";
+import {
+  exterior,
+  deluxeBalcony,
+  standardRoom,
+  deluxeRoom,
+  lounge,
+  rooms1,
+  rooms2,
+  rooms3,
+  rooms3_2,
+} from "@/lib/images";
 
 const stayCards = [
   {

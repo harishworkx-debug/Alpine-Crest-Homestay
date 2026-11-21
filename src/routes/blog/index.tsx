@@ -43,8 +43,8 @@ function BlogIndexPage() {
           Travel guides for the upper Shimla hills
         </h1>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          Practical guides and notes on visiting Theog, Kufri, Shimla and the
-          surrounding destinations, from the team at Alpine Crest Homestay.
+          Practical guides and notes on visiting Theog, Kufri, Shimla and the surrounding
+          destinations, from the team at Alpine Crest Homestay.
         </p>
       </section>
 
@@ -52,7 +52,8 @@ function BlogIndexPage() {
         {allBlogArticles.map((a) => (
           <Link
             key={a.slug}
-            to={`/blog/${a.slug}`}
+            to="/blog/$slug"
+            params={{ slug: a.slug }}
             className="overflow-hidden rounded-2xl border border-border bg-card shadow-soft transition-colors hover:bg-secondary"
           >
             <div className="p-6">
@@ -71,9 +72,7 @@ function BlogIndexPage() {
                 </span>
               </div>
               <h2 className="mt-4 text-2xl">{a.title}</h2>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                {a.excerpt}
-              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{a.excerpt}</p>
               <p className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-moss">
                 Read article
                 <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />

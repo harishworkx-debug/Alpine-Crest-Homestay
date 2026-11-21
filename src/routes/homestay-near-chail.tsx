@@ -49,11 +49,11 @@ function HomestayInChailPage() {
             Peaceful Homestay Base for Chail
           </h1>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            If you are looking for a peaceful homestay near Chail, Alpine Crest
-            Homestay offers a beautiful mountain stay in Village Kathot near Theog.
-            It's a convenient base for exploring Chail's wildlife sanctuary and historic
-            palace. Enjoy the mountain surroundings and easy access to
-            Chail's sights while staying in a comfortable and warm environment.
+            If you are looking for a peaceful homestay near Chail, Alpine Crest Homestay offers a
+            beautiful mountain stay in Village Kathot near Theog. It's a convenient base for
+            exploring Chail's wildlife sanctuary and historic palace. Enjoy the mountain
+            surroundings and easy access to Chail's sights while staying in a comfortable and warm
+            environment.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <WhatsAppLink message={WA.location}>Check Availability on WhatsApp</WhatsAppLink>
@@ -83,31 +83,29 @@ function HomestayInChailPage() {
           <div className="prose-stay">
             <h2>Why Stay Near Chail?</h2>
             <p>
-              Chail is a quiet hill station known for its heritage Palace and the
-              world's highest cricket ground. Staying near Theog lets you easily
-              visit Chail as a day trip while exploring the wider upper Shimla
-              region like Kufri and Narkanda from a central base.
+              Chail is a quiet hill station known for its heritage Palace and the world's highest
+              cricket ground. Staying near Theog lets you easily visit Chail as a day trip while
+              exploring the wider upper Shimla region like Kufri and Narkanda from a central base.
             </p>
 
             <h2>Alpine Crest Homestay Near Chail</h2>
             <p>
-              Our homestay is located in Village Kathot near Theog. The drive to Chail
-              is scenic and makes it easy to visit the sanctuary and palace during the day,
-              then come back to a peaceful balcony for the evening.
+              Our homestay is located in Village Kathot near Theog. The drive to Chail is scenic and
+              makes it easy to visit the sanctuary and palace during the day, then come back to a
+              peaceful balcony for the evening.
             </p>
             <p>
-              To be clear and honest: Alpine Crest Homestay is not in Chail itself.
-              It is in Village Kathot near Theog. We say "near Chail" because it
-              serves as an excellent, comfortable base for travellers exploring the area.
+              To be clear and honest: Alpine Crest Homestay is not in Chail itself. It is in Village
+              Kathot near Theog. We say "near Chail" because it serves as an excellent, comfortable
+              base for travellers exploring the area.
             </p>
 
             <h2>Rooms With Mountain Views</h2>
             <p>
-              The homestay offers two room types. The Standard Room has a
-              comfortable double bed and an attached bathroom with round-the-clock
-              hot water. The Deluxe Room adds a private balcony that opens onto the
-              deodar ridgeline, with a seating area for taking in the view. Both are
-              clean, simple and wood-warmed, with access to the shared lounge,
+              The homestay offers two room types. The Standard Room has a comfortable double bed and
+              an attached bathroom with round-the-clock hot water. The Deluxe Room adds a private
+              balcony that opens onto the deodar ridgeline, with a seating area for taking in the
+              view. Both are clean, simple and wood-warmed, with access to the shared lounge,
               terrace and garden.
             </p>
 
@@ -121,9 +119,9 @@ function HomestayInChailPage() {
 
             <h2>How to Reach Chail From Alpine Crest</h2>
             <p>
-              The homestay is a scenic drive from Chail. We can help arrange
-              a taxi for the trip to Chail and for wider sightseeing. Free private
-              parking is available right at the house if you are driving yourself.
+              The homestay is a scenic drive from Chail. We can help arrange a taxi for the trip to
+              Chail and for wider sightseeing. Free private parking is available right at the house
+              if you are driving yourself.
             </p>
           </div>
         </Reveal>
@@ -203,8 +201,8 @@ function HomestayInChailPage() {
         <div className="rounded-2xl bg-primary px-8 py-12 text-center text-primary-foreground">
           <h2 className="text-3xl">Book Your Stay For Chail</h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-sand/85">
-            Send us a WhatsApp message with your travel dates and we will get back
-            to you with availability, pricing and taxi help for visiting Chail.
+            Send us a WhatsApp message with your travel dates and we will get back to you with
+            availability, pricing and taxi help for visiting Chail.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <WhatsAppLink message={WA.location} variant="primary">
